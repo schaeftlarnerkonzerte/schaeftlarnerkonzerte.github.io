@@ -2,75 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/konzerte/</loc>
+    <loc>https://example.org/konzerte/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/konzerte/2025/03-blechsommerkl%C3%A4nge/</loc>
+    <loc>https://example.org/konzerte/2025/03-blechsommerkl%C3%A4nge/</loc>
     <lastmod>2025-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/konzerte/2025/02-sternzeichen-klarinette/</loc>
+    <loc>https://example.org/konzerte/2025/02-sternzeichen-klarinette/</loc>
     <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/konzerte/2025/01-chaos-und-paukenschlag/</loc>
+    <loc>https://example.org/konzerte/2025/01-chaos-und-paukenschlag/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/alejandro-marco-buhrmester/</loc>
+    <loc>https://example.org/solisten/alejandro-marco-buhrmester/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/andreas-schablas/</loc>
+    <loc>https://example.org/solisten/andreas-schablas/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/emanuel-graf/</loc>
+    <loc>https://example.org/solisten/emanuel-graf/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/gael-gandino/</loc>
+    <loc>https://example.org/solisten/gael-gandino/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/harald-harrer/</loc>
+    <loc>https://example.org/solisten/harald-harrer/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/jihyun-cecilia-lee/</loc>
+    <loc>https://example.org/solisten/jihyun-cecilia-lee/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/</loc>
+    <loc>https://example.org/solisten/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solisten/wes10brass/</loc>
+    <loc>https://example.org/solisten/wes10brass/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/leitung/benno-forster/</loc>
+    <loc>https://example.org/leitung/benno-forster/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/datenschutz/</loc>
+    <loc>https://example.org/datenschutz/</loc>
   </url><url>
-    <loc>http://localhost:1313/debug/</loc>
+    <loc>https://example.org/debug/</loc>
   </url><url>
-    <loc>http://localhost:1313/foerderkreis/</loc>
+    <loc>https://example.org/foerderkreis/</loc>
   </url><url>
-    <loc>http://localhost:1313/impressum/</loc>
+    <loc>https://example.org/impressum/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://example.org/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/leitung/</loc>
+    <loc>https://example.org/leitung/</loc>
   </url><url>
-    <loc>http://localhost:1313/leitung/michael-forster/</loc>
+    <loc>https://example.org/leitung/michael-forster/</loc>
   </url><url>
-    <loc>http://localhost:1313/praelatengarten/</loc>
+    <loc>https://example.org/praelatengarten/</loc>
   </url><url>
-    <loc>http://localhost:1313/programm/</loc>
+    <loc>https://example.org/programm/</loc>
   </url><url>
-    <loc>http://localhost:1313/programm/2025/</loc>
+    <loc>https://example.org/programm/2025/</loc>
   </url><url>
-    <loc>http://localhost:1313/programm/2026/</loc>
+    <loc>https://example.org/programm/2026/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/tickets/</loc>
+    <loc>https://example.org/tickets/</loc>
   </url><url>
-    <loc>http://localhost:1313/vleugels-orgel/</loc>
+    <loc>https://example.org/vleugels-orgel/</loc>
   </url>
 </urlset>

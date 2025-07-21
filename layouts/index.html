@@ -105,7 +105,7 @@
                 <div class="heading text-center">
                     <h2>Kloster Schäftlarn</h2>
                 </div>
-                <p class="lead">{{ .Params.about_monastery }}</p>
+                <div class="lead">{{ .Params.about_monastery | markdownify | safeHTML }}</div>
             </div>
         </div>
     </div>
@@ -177,7 +177,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h3 class="text-uppercase">Gastronomie</h3>
-                <p class="lead">{{ .Params.gastronomie }}</p>
+                <p class="lead">{{ .Params.gastronomie | markdownify }}</p>
             </div>
         </div>
     </div>
