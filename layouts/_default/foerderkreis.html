@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Förderkreis</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li>Förderkreis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- förderkreis -->
+<section class="bar background-white no-mb" id="content">
+    <div class="container">
+        <div class="row portfolio-project">
+            <div class="col-md-8">
+                <div class="heading">
+                    <h2>Über den Förderkreis</h2>
+                </div>
+                <p class="lead">{{ .Params.about_text | safeHTML }}</p>
+            </div>
+            <div class="col-md-4 project-more">
+                <div class="heading">
+                    <h3>Weitere Infos</h3>
+                </div>
+                
+                <h4>Satzung</h4>
+                <p>{{ .Params.statute_info | safeHTML }}</p>
+
+                <h4>Ansprechpartner</h4>
+                <p>{{ .Params.contact_info | safeHTML }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- fördern Sie mit -->
+<section class="bar background-gray no-mb" id="foerdern">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>Fördern Sie mit!</h2>
+                </div>
+                <p class="lead" style="text-align:center;">{{ .Params.support_text | safeHTML }}</p>
+
+                <div class="row">
+                    {{ range .Params.contact_methods }}
+                    <div class="col-md-4">
+                        <div class="box-simple">
+                            <div class="icon">
+                                <i class="{{ .icon }}"></i>
+                            </div>
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .content | safeHTML }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="get-it">
+    <div class="container">
+        <div class="col-md-12 col-sm-12">
+            <h5>{{ .Params.tax_info }}</h5>
+        </div>
+    </div>
+</div>
+
+{{ end }}

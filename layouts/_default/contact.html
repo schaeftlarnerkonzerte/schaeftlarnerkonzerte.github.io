@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Kontakt</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li>Kontakt</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- kontakt services -->
+<section class="bar background-gray no-mb" id="adr">
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h2>So erreichen Sie uns</h2>
+                </div>
+                <p class="lead">{{ .Params.intro_text | safeHTML }}</p>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.contact_services }}
+            <div class="col-md-4">
+                <div class="box-simple">
+                    <div class="icon">
+                        <i class="{{ .icon }}"></i>
+                    </div>
+                    <h3>{{ .title }}</h3>
+                    <p class="text-muted">{{ .description | safeHTML }}</p>
+                    <p>{{ .content | safeHTML }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- anfahrt -->
+<section class="bar background-white no-mb" id="weg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h2>So finden Sie zu uns</h2>
+                </div>
+                <p class="lead">{{ .Params.directions_intro | safeHTML }}</p>
+            </div>
+            <div class="col-md-6">
+                {{ range .Params.directions }}
+                <p>{{ . | safeHTML }}</p>
+                {{ end }}
+                <p>{{ .Params.parking_warning | safeHTML }}</p>
+            </div>
+            <div class="col-md-6">
+                <div class="Flexible-container" id="mapid"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<!-- leaflet -->
+<script src="/leaflet/leaflet.js"></script>
+<script src="/leaflet/leaflet-src.js"></script>
+<script src="/leaflet/leafletembed.js"></script>
+<script src="/leaflet/marker.json"></script>
+<script>
+    initmap();
+</script>
+{{ end }}

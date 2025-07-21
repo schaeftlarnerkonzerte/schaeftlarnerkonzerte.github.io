@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Programm</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li>spielplan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- programm -->
+<section class="bar background-gray no-mb" id="programm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Title }}</h2>
+                </div>
+                <p class="lead">Es spielt das Orchester der Schäftlarner Konzerte. Der Konzertbeginn ist um 19:00 Uhr. Der Einlass öffnet eine halbe Stunde vor Konzertbeginn. Änderungen vorbehalten.</p>
+                
+                {{ if .Params.concerts }}
+                <div class="col-md-14">
+                    <div class="panel-group accordion" id="accordionThree">
+                        {{ range $index, $concert := .Params.concerts }}
+                        {{ $collapseId := printf "collapse%d" (add $index 1) }}
+                        {{ if eq (add $index 1) 3 }}{{ $collapseId = "collapse3c" }}{{ end }}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" href="#{{ $collapseId }}" data-toggle="collapse" data-parent="#accordionThree">
+                                        {{ dateFormat "2. January 2006" $concert.date | replaceRE "January" "Januar" | replaceRE "February" "Februar" | replaceRE "March" "März" | replaceRE "April" "April" | replaceRE "May" "Mai" | replaceRE "June" "Juni" | replaceRE "July" "Juli" | replaceRE "August" "August" | replaceRE "September" "September" | replaceRE "October" "Oktober" | replaceRE "November" "November" | replaceRE "December" "Dezember" }}
+                                        <i>/ <span style="text-transform: none;">{{ $concert.title }}</span></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if eq $collapseId "collapse3c" }} in{{ end }}">
+                                <div class="panel-body">
+                                    {{ if $concert.program }}
+                                    <p>
+                                        {{ range $concert.program }}
+                                        {{ . }}<br>
+                                        {{ end }}
+                                    </p>
+                                    {{ end }}
+                                    
+                                    {{ if $concert.artists }}
+                                    <p>
+                                        {{ $soloists := slice }}
+                                        {{ $conductor := "" }}
+                                        {{ range $concert.artists }}
+                                            {{ if (strings.Contains . "Leitung:") }}
+                                                {{ $conductor = . }}
+                                            {{ else }}
+                                                {{ $soloists = $soloists | append . }}
+                                            {{ end }}
+                                        {{ end }}
+                                        
+                                        {{ if $soloists }}
+                                        {{ range $i, $artist := $soloists }}
+                                            {{ if gt $i 0 }}; {{ end }}
+                                            {{ $name := index (split $artist ",") 0 }}
+                                            {{ $instrument := strings.TrimSpace (index (split $artist ",") 1) }}
+                                            {{ $urlName := $name | lower | replaceRE "\\s+" "-" | replaceRE "[^a-z0-9-]" "" }}
+                                            <a style="color:rgb(150,190,255);" href="/solisten/{{ $urlName }}/">{{ $name }}</a>{{ if $instrument }}, {{ $instrument }}{{ end }}
+                                        {{ end }}<br>
+                                        {{ end }}
+                                        
+                                        {{ if $conductor }}
+                                        {{ $conductor | replaceRE "Leitung: " "" | printf "Leitung: <a style=\"color:rgb(150,190,255);\" href=\"/leitung/michael-forster/\">%s</a>" | safeHTML }}
+                                        {{ end }}
+                                        
+                                        <br><br>
+                                        {{ if $concert.ticket_url }}
+                                        <a style="font-style:oblique;font-size:1.05em;font-weight:800;" target="_blank" href="{{ $concert.ticket_url }}">
+                                            Tickets für dieses Konzert sichern ab €&nbsp;25
+                                        </a>
+                                        {{ end }}
+                                    </p>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+$(document).ready(function() {
+    // Check if there's a hash in the URL and open the corresponding accordion panel
+    if (window.location.hash) {
+        var hash = window.location.hash;
+        var target = $(hash);
+        if (target.length && target.hasClass('panel-collapse')) {
+            // Close all panels first
+            $('.panel-collapse').removeClass('in');
+            // Open the target panel
+            target.addClass('in');
+            // Scroll to the panel
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 500);
+        }
+    }
+});
+</script>
+{{ end }}

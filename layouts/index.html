@@ -1,0 +1,187 @@
+{{ define "main" }}
+
+<!-- jumbotron - Startseite Kopf -->
+<section class="no-mb">
+    <!-- *** JUMBOTRON ***  -->
+    <div class="jumbotron">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="row mb-small">
+                <div class="col-sm-12 text-center">
+                    <h2>Willkommen bei den</h2>
+                    <h1>Schäftlarner Konzerten</h1>
+                    <h3>Die Konzertreihe südlich von München. Seit 1968.</h3> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *** JUMBOTRON END *** -->
+</section>
+<!-- /jumbotron - Startseite Kopf -->
+
+<!--    homepage-text-section    -->
+<section class="bar background-white no-mb" id="hinweis">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Params.greeting | default "Liebe Musikfreunde," }}</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="lead">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    /homepage-text-section    -->
+
+<!--    hintergrundbild statt animation    -->
+<section class="bar background-image-fixed-3 no-mb color-white" id="veranstalter">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2> </h2>
+                </div>
+                <p class="lead"> </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    /hintergrundbild statt animation   -->
+
+<!--      über      -->
+<section class="bar background-white no-mb" id="leitung">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>Über die Konzerte</h2> 
+                </div>
+                <p class="lead">{{ .Params.about_concerts }}</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-md-offset-2">
+            <div class="team-member" data-animate="fadeInUp">
+                <div class="image">
+                    <a href="/leitung/michael-forster/"> 
+                        <img src="/img/musiker/juckel.jpg" alt="Michael Forster" class="img-responsive img-circle"> 
+                    </a>
+                </div>
+                <h3><a href="/leitung/michael-forster/">Michael Forster</a></h3>
+                <p class="role">Künstlerische Leitung</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-md-offset-2">
+            <div class="team-member" data-animate="fadeInUp">
+                <div class="image">
+                    <a href="/leitung/benno-forster/"> 
+                        <img src="/img/musiker/benno.jpg" alt="Benno Forster" class="img-responsive img-circle"> 
+                    </a>
+                </div>
+                <h3><a href="/leitung/benno-forster/">Benno Forster</a><br>(*1936 †2023)</h3>
+                <p class="role">Gründer der Schäftlarner Konzerte</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--   /über    -->
+
+<!--     kloster-schaeftlarn                 -->
+<section class="bar background-image-fixed-3 no-mb color-white" id="kloster-schaeftlarn">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>Kloster Schäftlarn</h2>
+                </div>
+                <p class="lead">{{ .Params.about_monastery }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--     /kloster-schaeftlarn                 -->
+
+<!--     Bilder Prälatengarten etc                 -->
+<section class="bar background-gray no-mb" id="fotos">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>Rund ums Konzert</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row portfolio">
+                    <div class="col-sm-4">
+                        <div class="box-image">
+                            <div class="image"> 
+                                <img src="/img/own/garten1.jpg" alt="Prälatengarten" class="img-responsive"> 
+                            </div>
+                            <div class="bg"></div>
+                            <div class="name">
+                                <h3><a href="/praelatengarten/">Prälatengarten</a></h3> 
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <a class="btn btn-xs btn-link" href="/praelatengarten/">Zum Prälatengarten</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box-image">
+                            <div class="image"> 
+                                <img src="/img/own/Klosterladen.jpg" alt="Klosterladen Schäftlarn" class="img-responsive"> 
+                            </div>
+                            <div class="bg"></div>
+                            <div class="name">
+                                <h3>Klosterladen</h3> 
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <a class="btn btn-xs btn-link" href="http://www.abtei-schaeftlarn.de/wirtschaft-betriebe/klosterladen/" target="_blank">Zum Klosterladen</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box-image">
+                            <div class="image"> 
+                                <img src="/img/own/orgel1.jpg" alt="Vleugels-Orgels" class="img-responsive"> 
+                            </div>
+                            <div class="bg"></div>
+                            <div class="name">
+                                <h3><a href="/vleugels-orgel/">Vleugels-Orgel</a></h3> 
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <a class="btn btn-xs btn-link" href="/vleugels-orgel/">Zur Vleugels-Orgel</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--     /Bilder Prälatengarten etc                   -->
+
+<!--     gastronomie                 -->
+<section class="bar background-image-fixed-2 no-mb color-white text-center" id="gastronomie">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase">Gastronomie</h3>
+                <p class="lead">{{ .Params.gastronomie }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--     /gastronomie                 -->
+
+{{ end }}

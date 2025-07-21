@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/programm/2025/">Spielplan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="team-member-detail">
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="lead">
+                        {{ .Content }}
+                    </p>
+                    
+                    {{ if .Params.links }}
+                    <div class="heading">
+                        <h3>Weitere Infos</h3>
+                    </div>
+                    <ul class="ul-icons">
+                        {{ range .Params.links }}
+                        <li>
+                            <p class="lead">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="{{ .url }}" target="_blank">{{ .title }}</a>
+                            </p>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </div>
+
+                <div class="col-md-4">
+                    {{ if .Params.image }}
+                    <img class="img-responsive img-circle" alt="{{ .Title }}" src="{{ .Params.image }}">
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+{{ end }}

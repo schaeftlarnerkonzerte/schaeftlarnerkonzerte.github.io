@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h1>Debug: Alle Konzerte</h1>
+{{ $concerts := where .Site.RegularPages "Section" "konzerte" }}
+<p>Gefundene Konzerte: {{ len $concerts }}</p>
+{{ range $concerts }}
+<p>{{ .Title }} - Jahr: {{ .Params.year }} (Type: {{ printf "%T" .Params.year }}) - Order: {{ .Params.order }} - File: {{ .File.Path }}</p>
+{{ end }}
+
+<h2>Debug: Manual 2025 Filter</h2>
+{{ $manual2025 := slice }}
+{{ range $concerts }}
+    {{ if eq .Params.year 2025 }}
+        {{ $manual2025 = $manual2025 | append . }}
+    {{ end }}
+{{ end }}
+<p>Manual 2025 Konzerte: {{ len $manual2025 }}</p>
+{{ range $manual2025 }}
+<p>{{ .Title }} - Order: {{ .Params.order }}</p>
+{{ end }}
+{{ end }}

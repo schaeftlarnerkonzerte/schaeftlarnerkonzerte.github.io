@@ -1,0 +1,15 @@
+---
+title: "Emanuel Graf"
+image: "/img/musiker/emanuel-graf.jpg"
+date: 2025-01-21
+draft: false
+links:
+  - title: "Homepage von Emanuel Graf"
+    url: "https://www.emanuelgraf.com"
+---
+
+Der Deutsch-Schweizer Emanuel Graf zählt zu einem der spannendsten Cellisten unserer Zeit. Sein Studium absolvierte er bei Prof. Wolfgang Emanuel Schmidt, dessen Assistent er noch im Laufe des Studiums wurde. Weitere wichtige Impulse erhielt er u. a. von Prof. David Geringas, Prof. Wolfgang Böttcher, Prof. Wolfgang Marschner, Prof. Ana Chumanchenko und Prof. Jens Peter Maintz. Noch während des Studiums wurde Emanuel Graf 1. Solocellist an der Royal Danish Opera Kopenhagen. 2014 wurde er dann unter Kirill Petrenko als 1. Solocellist an der Bayerischen Staatsoper engagiert.
+
+Internationale Tourneen führten Emanuel Graf rund um den Globus, u. a. in die New Yorker Carnegie Hall in den Wiener Musikverein, in die Berliner Philharmonie, die Shanghai Symphony Hall, die Shenzhen Concert Hall, das Taiyuan Shanxi Grand Theatre, die Mailänder Scala, in die Dresdner Semper Oper, das Gewandhaus Leipzig und das Symphony Center in Chicago. Gearbeitet hat der Cellist des bayerischen Staatsorchesters mit Dirigenten wie Mariss Jansons, Zubin Metha, Herbert Blomstedt, Christoph Eschenbach, Andris Nelsons, Gianandrea Noseda, Paavo Järvi, Yoel Gamzou, und Kirill Petrenko. Er gastierte u. a. beim Sinfonieorchester des Bayerischen Rundfunks, dem Gewandhaus Orchester Leipzig, dem Radiosinfonieorchester Berlin, dem WDR Sinfonieorchester, dem SWR Symphonieorchester Stuttgart, dem HR Sinfonieorchester, an der Oper Zürich, der Deutschen Oper Berlin und dem Sinfonieorchester Basel.
+
+Mit großer Hingabe, interessiert sich Emanuel Graf auch für die Aufführung zeitgenössischer Musik. So hat er z. B. mit grossem Erfolg das Cellokonzert seines Freundes, dem Amerikanischen Komponisten Marshal McDaniel, welches ihm gewidmet wurde, beim internationalen Podium Festival Esslingen zur Welturaufführung gebracht, unter der Leitung von Yoel Gamzou. In einer Kooperation mit der Musikhochschule Carl Maria von Weber Dresden, brachte er nach enger Zusammenarbeit mit dem Komponisten Georg Friedrich Haas, dessen Werk für Violoncello: Aus freier Lust… verbunden…, zur Aufführung. Ausserdem setzt er sich für die Verbindung der verschiedenen Künste wie Literatur, Musik, Tanz und Malerei ein. Dazu gründete er mit seiner Familie, das Kulturzentrum 3Klang, südlich von Freiburg. Die Förderung junger, hochbegabter Cellisten, liegt ihm sehr am Herzen. So übernahm er die Leitung der 12 internationalen Cellist:innen der Cellifamily. Ein Ensemble, welches Cellist:innen aus allen Ländern verbindet und einen interkulturellen sowie sozialen Gemischaftsauftrag erfüllt, weit über die Grenzen der Musik hinaus. Graf spielt er auf dem L´Eveque de La Rochelle Violoncello von Antonio Stradivari aus dem Jahr 1690.

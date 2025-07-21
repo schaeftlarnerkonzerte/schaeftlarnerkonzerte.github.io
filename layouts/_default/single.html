@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="bar background-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                
+                {{ if .Params.image }}
+                <div class="text-center mb-4">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-responsive" style="max-width: 300px;">
+                </div>
+                {{ end }}
+                
+                {{ if .Params.instrument }}
+                <p class="text-center"><strong>{{ .Params.instrument }}</strong></p>
+                {{ end }}
+                
+                {{ if .Params.orchestra }}
+                <p class="text-center">{{ .Params.orchestra }}</p>
+                {{ end }}
+                
+                <div class="content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
