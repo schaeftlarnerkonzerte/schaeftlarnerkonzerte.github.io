@@ -67,8 +67,12 @@
                                         {{ if $soloists }}
                                         {{ range $i, $artist := $soloists }}
                                             {{ if gt $i 0 }}; {{ end }}
-                                            {{ $name := index (split $artist ",") 0 }}
-                                            {{ $instrument := strings.TrimSpace (index (split $artist ",") 1) }}
+                                            {{ $parts := split $artist "," }}
+                                            {{ $name := index $parts 0 }}
+                                            {{ $instrument := "" }}
+                                            {{ if gt (len $parts) 1 }}
+                                                {{ $instrument = strings.TrimSpace (index $parts 1) }}
+                                            {{ end }}
                                             {{ $urlName := $name | lower | replaceRE "\\s+" "-" | replaceRE "[^a-z0-9-]" "" }}
                                             <a style="color:rgb(150,190,255);" href="/solisten/{{ $urlName }}/">{{ $name }}</a>{{ if $instrument }}, {{ $instrument }}{{ end }}
                                         {{ end }}<br>
