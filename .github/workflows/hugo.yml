@@ -1,5 +1,5 @@
-# GitHub Actions Workflow für Hugo Website Deployment
-name: Deploy Hugo site to Pages
+# GitHub Actions Workflow für Hugo Website Build und ZIP-Upload
+name: Build Hugo site and upload as ZIP
 
 on:
   # Läuft bei Push auf main branch
@@ -11,16 +11,9 @@ on:
   # Ermöglicht manuelles Auslösen des Workflows
   workflow_dispatch:
 
-# Setzt Berechtigungen für GITHUB_TOKEN um Pages zu deployen
+# Setzt Berechtigungen für GITHUB_TOKEN um Releases zu erstellen
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Erlaubt nur einen gleichzeitigen Deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 # Standard Shell für alle run steps
 defaults:
@@ -48,10 +41,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       
@@ -63,21 +52,40 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "https://schaeftlarner-konzerte.de/"
       
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Create ZIP archive
+        run: |
+          cd public
+          zip -r ../schaeftlarner-konzerte-website-$(date +%Y%m%d-%H%M%S).zip .
+          cd ..
+          echo "ZIP_FILE=$(ls schaeftlarner-konzerte-website-*.zip)" >> $GITHUB_ENV
+      
+      - name: Upload ZIP as artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: ./public
-
-  # Deployment Job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          name: website-build
+          path: ${{ env.ZIP_FILE }}
+          retention-days: 30
+      
+      - name: Create Release
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Website Build ${{ github.run_number }}
+          body: |
+            Automatischer Build der Schäftlarner Konzerte Website
+            
+            **Build Details:**
+            - Commit: ${{ github.sha }}
+            - Branch: ${{ github.ref_name }}
+            - Build Zeit: ${{ github.event.head_commit.timestamp }}
+            
+            **Installation:**
+            1. ZIP-Datei herunterladen
+            2. Entpacken auf Webserver
+            3. Webserver auf den entpackten Ordner zeigen lassen
+          files: ${{ env.ZIP_FILE }}
+          draft: false
+          prerelease: false
