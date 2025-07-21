@@ -71,7 +71,10 @@
                                             {{ $name := index $parts 0 }}
                                             {{ $instrument := "" }}
                                             {{ if gt (len $parts) 1 }}
-                                                {{ $instrument = strings.TrimSpace (index $parts 1) }}
+                                                {{ $rawInstrument := index $parts 1 }}
+                                                {{ if $rawInstrument }}
+                                                    {{ $instrument = strings.TrimSpace (printf "%s" $rawInstrument) }}
+                                                {{ end }}
                                             {{ end }}
                                             {{ $urlName := $name | lower | replaceRE "\\s+" "-" | replaceRE "[^a-z0-9-]" "" }}
                                             <a style="color:rgb(150,190,255);" href="/solisten/{{ $urlName }}/">{{ $name }}</a>{{ if $instrument }}, {{ $instrument }}{{ end }}
