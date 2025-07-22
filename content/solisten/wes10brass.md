@@ -1,7 +1,6 @@
 ---
 title: "wes10brass"
 image: "/img/musiker/wes10brass.jpg"
-type: "ensemble"
 date: 2025-01-21
 draft: false
 links:
