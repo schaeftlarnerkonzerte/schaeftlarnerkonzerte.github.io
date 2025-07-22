@@ -9,7 +9,7 @@ links:
   - title: "Bergische Symphoniker"
     url: "https://www.bergischesymphoniker.de/wir/orchestermusiker/"
   - title: "Ein Ensemble mit Strahlkraft: Michael Forster über 'wes10brass' bei den Schäftlarner Konzerten"
-    url: "/page/interview-michael-forster-wes10brass/"
+    url: "/interview-michael-forster-wes10brass/"
 ---
 
 Ab 1994 spielte er im Consortium Classicum (Leitung Prof. Dieter Glöcker). Konzerte und CD-Aufnahmen mit diesem Ensemble führten ihn ins In- und Ausland. Seit 1997 ist er stellvertretender Solooboist der Bergischen Symphoniker.
