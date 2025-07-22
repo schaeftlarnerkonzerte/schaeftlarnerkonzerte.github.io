@@ -3388,6 +3388,9 @@ p {
     font-size: 21px;
   }
 }
+.lead p {
+  font-size: inherit;
+}
 .text-small {
   font-size: 12px;
 }
