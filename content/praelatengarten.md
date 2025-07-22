@@ -1,33 +1,28 @@
 ---
 title: "Prälatengarten"
-image: "/img/own/garten1.jpg"
+layout: "gallery"
+gallery:
+  - "/img/own/garten1g.jpg"
+  - "/img/own/garten2g.jpg"  
+  - "/img/own/garten3g.jpg"
+  - "/img/own/garten4g.jpg"
+sidebar:
+  title: "Weitere Infos"
+  sections:
+    - title: "Ansprechpartner"
+      content: "Maria Stangl"
+    - title: "Institution"
+      content: "Schönes Schäftlarn e.V."
+aliases:
+  - /praelatengarten.html
 ---
 
-# Der Prälatengarten
+Der Prälatengarten im Kloster Schäftlarn ist ein Ort der Stille und Begegnung. Er wurde 1998 von der Interessengemeinschaft Schönes Schäftlarn e. V. neu angelegt. Zehn Bänke laden zum Verweilen und zum Gespräch ein.
 
-Der Prälatengarten des Klosters Schäftlarn ist ein besonderes Juwel und lädt Konzertbesucher zu einem entspannten Spaziergang vor oder nach dem Konzert ein.
+Der Garten wird von Gebäuden aus der Barockzeit umgeben. Auch die elegant-geschwungenen Begrenzungsmauern im Osten und im Westen sind noch original aus dieser Zeit. Ein Teil im Bereich des schmiedeeisernen Tores musste allerdings erneuert werden. Im Zentrum des Gartens liegt der Springbrunnen. Er wird von einer Quelle gespeist, die im nahegelegenen Berghang entspringt. Diese Quelle fließt unaufhörlich, Tag und Nacht, Sommer wie Winter. Sie kennt keinen Anfang und kein Ende, darum ist sie Symbol für Gott. Auch der Kreis ist ohne Anfang und ohne Ende, und daher ein göttliches Symbol. Die Kreisform wiederholt sich im Brunnenbecken, im Weg um das Becken und in den anschließenden Rosenbeeten.
 
-## Ein Ort der Ruhe
+Vom Becken aus führen vier Hauptwege in die vier Himmelsrichtungen. Diese vier Weltachsen repräsentieren den Kosmos. In der Verbindung von Quelle, Kreis und Weltachsen symbolisiert die Gartenanlage eine in der Schöpfung grundgelegte innere Ordnung.
 
-In der idyllischen Gartenanlage können Sie:
+Der Garten wurde 1998 von der Interessengemeinschaft Schönes Schäftlarn e. V. neu angelegt. Über 80 verschiedene Rosensorten wurden neben Lavendel, Buchs, Stauden und Sommerblumen in den Beeten gepflanzt. Zehn Bänke laden zum Verweilen und zum Gespräch ein.
 
-- **Blumenpracht** genießen - je nach Jahreszeit blühen hier verschiedene Stauden und Sträucher
-- **Springbrunnen** bewundern - das plätschernde Wasser schafft eine meditative Atmosphäre  
-- **Ruhe finden** - fernab vom Alltagsstress in klösterlicher Umgebung
-- **Spazieren gehen** - auf gepflegten Wegen durch die Anlage wandeln
-
-## Öffnungszeiten
-
-Der Garten ist in der Regel zu den Konzertzeiten geöffnet und bietet eine wunderbare Möglichkeit, sich vor dem Konzert einzustimmen oder danach den Abend entspannt ausklingen zu lassen.
-
-## Geschichte
-
-Der Prälatengarten gehört zur Klosteranlage Schäftlarn und wird von den Benediktinermönchen gepflegt. Die Gartentradition reicht weit in die Klostergeschichte zurück und spiegelt die Verbundenheit des Ordens mit der Natur wider.
-
-## Gastronomie
-
-In unmittelbarer Nähe des Gartens finden Sie das [Klosterbräu Stüberl](http://www.klosterbraeustueberl-schaeftlarn.de/), wo Sie vor oder nach Ihrem Gartenbesuch einkehren können.
-
----
-
-*Ein Besuch des Prälatengartens rundet Ihren Konzertabend in Schäftlarn perfekt ab - nutzen Sie die Gelegenheit für einen Moment der Besinnung in dieser besonderen Atmosphäre.*
+Viele Helfer und aktive Mitglieder haben hunderte von Stunden ehrenamtlich gearbeitet, bis das jetzige Bild entstanden ist. Sie werden auch die laufende Pflege des Gartens übernehmen

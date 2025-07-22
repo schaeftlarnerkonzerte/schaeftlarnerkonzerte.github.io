@@ -1,46 +1,25 @@
 ---
-title: "Vleugels-Orgel"
-image: "/img/own/orgel1.jpg"
+title: "Die Vleugels-Orgel in der Klosterkirche"
+layout: "gallery"
+gallery:
+  - "/img/own/orgel1g.jpg"
+  - "/img/own/orgel2g.jpg"
+  - "/img/own/orgel3g.jpg" 
+  - "/img/own/orgel4g.jpg"
+sidebar:
+  title: "Weitere Infos"
+  sections:
+    - title: "Ansprechpartner"
+      content: '<a href="http://www.abtei-schaeftlarn.de/">Abtei Schäftlarn</a>'
+    - title: "Hersteller"
+      content: '<a href="http://www.vleugels.de/">Orgelmanufactur Vleugels</a>'
+aliases:
+  - /vleugels-orgel.html
+  - /orgel.html
 ---
 
-# Die Vleugels-Orgel
+Im Sommer 1982 reifte in der Abtei Schäftlarn der Entschluss, den Bau einer neuen Orgel in Angriff zu nehmen. Zu offenkundig waren die Mängel des pneumatischen Instruments, das im Jahre 1910 die Münchner Hoforgelbauwerkstätte Maerz-Schönle in das bestehende Rokoko-Gehäuse von 1762 von Anton Bayr eingebaut hatte.
 
-Die prachtvolle Orgel in der Klosterkirche Schäftlarn ist ein Meisterwerk des niederländischen Orgelbauers Vleugels und ein Höhepunkt der barocken Orgelbaukunst.
+Am 15. Februar 1994 wurde der Orgelbauvertrag mit der Firma Vleugels aus Hardheim unterzeichnet, die nach mannigfaltigen und unvorhersehbaren Schwierigkeiten das Instrument am 13. Oktober 1996 der Abtei übergeben konnte. Die Disposition der Orgel entspricht vermutlich der originalen Registeraufstellung. Der Orgelsachverständige der Erzdiözese München und Freising, der Organist Dr. Michael Hartmann stellt in der Festschrift zur Orgelweihe fest: "Ein altbayerisches Urkloster wie Schäftlarn muß eine Orgel im süddeutschen Klangstil haben: warme Flöten, helle Streicher, runde, nicht aggressive Klangfülle. Das Gesamtrepertoire der Orgelmusik des 18. Jahrhunderts erfordert eine behutsame Ergänzung der Spielmöglichkeiten."
 
-## Geschichte der Orgel
-
-Die Orgel wurde im [Jahr einfügen] von der renommierten Orgelbaufirma Vleugels erbaut und ist seither ein zentraler Bestandteil der musikalischen Tradition in Schäftlarn.
-
-## Technische Daten
-
-**Disposition:**
-- [Anzahl] Register
-- [Anzahl] Manuale
-- [weitere technische Details nach Recherche einfügen]
-
-## Besonderheiten
-
-### Barocke Klangästhetik
-
-Die Vleugels-Orgel zeichnet sich durch ihren authentisch barocken Klang aus, der besonders gut zu der Rokoko-Architektur der Klosterkirche passt.
-
-### Akustik
-
-Die hervorragende Akustik der Klosterkirche Schäftlarn kommt dem vollen Klangspektrum der Orgel zugute und schafft ein einzigartiges Hörerlebnis.
-
-## Die Orgel in den Schäftlarner Konzerten
-
-In vielen Konzerten der Schäftlarner Konzertreihe spielt die Vleugels-Orgel eine zentrale Rolle:
-
-- **Orgelkonzerte** mit renommierten Organisten
-- **Kammermusik** in Kombination mit anderen Instrumenten  
-- **Chorkonzerte** mit Orgelbegleitung
-- **Barocke Werke** in stilgerechter Aufführung
-
-## Organisten
-
-Regelmäßig gastieren herausragende Organisten an der Vleugels-Orgel und präsentieren Werke von Bach bis zur Moderne.
-
----
-
-*Die Vleugels-Orgel ist nicht nur ein Musikinstrument, sondern ein Kunstwerk, das die spirituelle Atmosphäre der Klosterkirche Schäftlarn maßgeblich prägt und den Schäftlarner Konzerten ihre besondere Note verleiht.*
+Realisiert wurde diese durch eine Erweiterung des Manual- wie des Pedalumfangs um je fünf Halbtöne; nur so sind die Werke von Johann Sebastian Bach spielbar. Nach dem Vorbild anderer süddeutscher Orgeln wie denen von Weingarten und Ottobeuren ergänzte man die in der alten Bayr-Orgel nicht disponierten Zungenstimmen. Im Sinne Bach'scher Tradition wurde zusätzlich ein Glockenspiel eingeplant und um einen "von den Isarauen herüberschallenden" Vogelschrei erweitert, den der Orgelbauer noch mit einem Paukenschlag kontrapunktierte.

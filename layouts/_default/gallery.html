@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li>{{ .Title }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.breadcrumb -->
+
+<!-- main content -->
+<div id="content">
+    <div class="container">
+        
+        <!-- owl carousel gallery -->
+        {{ if .Params.gallery }}
+        <div class="project owl-carousel">
+            {{ range .Params.gallery }}
+            <div class="item">
+                <img src="{{ . }}" alt="{{ $.Title }}" class="img-responsive">
+            </div>
+            {{ end }}
+        </div>
+        <!-- /.project owl-slider -->
+        {{ end }}
+        
+        <section>
+            <div class="row portfolio-project">
+                <div class="col-md-8">
+                    <div class="heading">
+                        <h3>{{ .Title }}</h3>
+                    </div>
+                    {{ .Content }}
+                </div>
+                {{ if .Params.sidebar }}
+                <div class="col-md-4 project-more">
+                    <div class="heading">
+                        <h3>{{ .Params.sidebar.title | default "Weitere Infos" }}</h3>
+                    </div>
+                    {{ range .Params.sidebar.sections }}
+                    <h4>{{ .title }}</h4>
+                    <p>{{ .content | safeHTML }}</p>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </section>
+    </div>
+</div>
+
+{{ end }}

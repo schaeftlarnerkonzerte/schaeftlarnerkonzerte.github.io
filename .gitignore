@@ -1,4 +1,7 @@
 # Hugo
+public/
+resources/
+.hugo_build.lock
 website/public/
 website/resources/
 website/.hugo_build.lock
