@@ -1,0 +1,8 @@
+# robots.txt fuer http://www.schaeftlarner-konzerte.de/
+User-agent: *
+
+Disallow: /alte_seite/ # old content
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /leaflet
