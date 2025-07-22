@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Konzerte on My New Hugo Site</title>
-    <link>https://example.org/konzerte/</link>
+    <link>http://localhost:1313/konzerte/</link>
     <description>Recent content in Konzerte on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/konzerte/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/konzerte/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blechsommerklänge</title>
-      <link>https://example.org/konzerte/2025/03-blechsommerkl%C3%A4nge/</link>
+      <link>http://localhost:1313/konzerte/2025/03-blechsommerkl%C3%A4nge/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/konzerte/2025/03-blechsommerkl%C3%A4nge/</guid>
+      <guid>http://localhost:1313/konzerte/2025/03-blechsommerkl%C3%A4nge/</guid>
       <description>&lt;p&gt;Ein sommerliches Konzert mit dem renommierten Blechbläserensemble wes10brass, das eine musikalische Reise von der Renaissance bis zur Moderne bietet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sternzeichen: Klarinette!</title>
-      <link>https://example.org/konzerte/2025/02-sternzeichen-klarinette/</link>
+      <link>http://localhost:1313/konzerte/2025/02-sternzeichen-klarinette/</link>
       <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/konzerte/2025/02-sternzeichen-klarinette/</guid>
+      <guid>http://localhost:1313/konzerte/2025/02-sternzeichen-klarinette/</guid>
       <description>&lt;p&gt;Ein Konzert ganz im Zeichen der Klarinette mit virtuosen Werken und wunderbarer Kammermusik.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chaos und Paukenschlag</title>
-      <link>https://example.org/konzerte/2025/01-chaos-und-paukenschlag/</link>
+      <link>http://localhost:1313/konzerte/2025/01-chaos-und-paukenschlag/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/konzerte/2025/01-chaos-und-paukenschlag/</guid>
+      <guid>http://localhost:1313/konzerte/2025/01-chaos-und-paukenschlag/</guid>
       <description>&lt;p&gt;Ein Konzert voller Überraschungen mit Haydns berühmter &amp;ldquo;Paukenschlag&amp;rdquo;-Sinfonie und wunderbaren Arien aus der Klassik.&lt;/p&gt;</description>
     </item>
   </channel>

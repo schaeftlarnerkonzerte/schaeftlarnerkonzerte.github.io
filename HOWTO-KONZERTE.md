@@ -4,15 +4,15 @@ Diese Anleitung erklärt, wie Sie neue Konzerte zu den Schäftlarner Konzerten h
 
 ## Übersicht
 
-Die Konzerte werden in den Spielplan-Dateien im Ordner `website/content/programm/` verwaltet. Jedes Jahr hat eine eigene Datei (z.B. `2025.md`, `2026.md`).
+Die Konzerte werden ausschließlich in den Spielplan-Dateien im Ordner `content/programm/` verwaltet. Jedes Jahr hat eine eigene Datei (z.B. `2025.md`, `2026.md`). Alle Konzertdaten stehen im YAML-Format in der jeweiligen Spielplan-Datei.
 
 ## Neues Konzert zu einem bestehenden Jahr hinzufügen
 
 ### Schritt 1: Spielplan-Datei öffnen
 
 Öffnen Sie die entsprechende Datei für das gewünschte Jahr:
-- Für 2025: `website/content/programm/2025.md`
-- Für 2026: `website/content/programm/2026.md`
+- Für 2025: `content/programm/2025.md`
+- Für 2026: `content/programm/2026.md`
 
 ### Schritt 2: Neues Konzert hinzufügen
 
@@ -46,9 +46,9 @@ Fügen Sie einen neuen Konzert-Block zur `concerts:` Liste hinzu:
 
 ### Schritt 1: Neue Spielplan-Datei erstellen
 
-Erstellen Sie eine neue Datei: `website/content/programm/JAHR.md`
+Erstellen Sie eine neue Datei: `content/programm/JAHR.md`
 
-Beispiel für `website/content/programm/2026.md`:
+Beispiel für `content/programm/2026.md`:
 
 ```yaml
 ---
@@ -71,10 +71,20 @@ concerts:
 
 ### Schritt 2: Navigation aktualisieren
 
-Bearbeiten Sie `website/layouts/partials/navigation.html` und fügen Sie das neue Jahr zur Programm-Dropdown hinzu:
+Bearbeiten Sie `hugo.yaml` und fügen Sie das neue Jahr zur Programm-Navigation hinzu:
 
-```html
-<li><a href="/programm/2026/">Spielplan 2026</a></li>
+```yaml
+menu:
+  main:
+    - name: "Programm"
+      url: "/programm/"
+      weight: 20
+      hasChildren: true
+      children:
+        - name: "Spielplan 2025"
+          url: "/programm/2025/"
+        - name: "Spielplan 2026"
+          url: "/programm/2026/"
 ```
 
 ## Spezielle Funktionen
@@ -84,14 +94,14 @@ Bearbeiten Sie `website/layouts/partials/navigation.html` und fügen Sie das neu
 Wenn wes10brass auftritt und der Link von der Startseite funktionieren soll:
 
 1. Das wes10brass-Konzert sollte das **3. Konzert** in der Liste sein
-2. Oder Sie passen den Link in `website/content/_index.md` entsprechend an
+2. Oder Sie passen den Link in `content/_index.md` entsprechend an
 
 Der aktuelle Link zeigt auf `#collapse3c`, was dem 3. Konzert entspricht.
 
 ### Solisten-Links
 
 Stellen Sie sicher, dass die Solisten-Seiten existieren:
-- Pfad: `website/content/solisten/solist-name.md`
+- Pfad: `content/solisten/solist-name.md`
 - URL-Format: Kleinbuchstaben, Leerzeichen durch `-` ersetzen
 - Beispiel: "Emanuel Graf" → `/solisten/emanuel-graf/`
 
@@ -142,7 +152,7 @@ concerts:
 Nach Änderungen:
 
 1. Terminal öffnen
-2. In den `website/` Ordner wechseln
+2. In das Website-Verzeichnis wechseln
 3. `hugo` ausführen
 4. Website ist unter `public/` verfügbar
 

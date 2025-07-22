@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/konzerte/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/konzerte/2025/03-blechsommerkl%C3%A4nge/</loc>
-    <lastmod>2025-07-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/konzerte/2025/02-sternzeichen-klarinette/</loc>
-    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/konzerte/2025/01-chaos-und-paukenschlag/</loc>
-    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://example.org/solisten/alejandro-marco-buhrmester/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -39,6 +24,9 @@
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/solisten/wes10brass/</loc>
+    <lastmod>2025-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/leitung/benno-forster/</loc>

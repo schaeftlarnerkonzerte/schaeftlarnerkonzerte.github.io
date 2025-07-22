@@ -8,61 +8,6 @@ params:
   keywords: 'Schäftlarner Konzerte, Mozart, Haydn, Bach, Schubert, klassische Musik, Benno Forster, Michael Forster, Kloster Schäftlarn, Kirchenmusik, Barockmusik'
   author: 'Schäftlarner Konzerte e.V.'
 
-menu:
-  main:
-    - name: "Home"
-      url: "/"
-      weight: 10
-      hasChildren: true
-      children:
-        - name: "Infos"
-          url: "/"
-        - name: "Über die Konzerte"
-          url: "/#leitung"
-        - name: "Kloster Schäftlarn"
-          url: "/#kloster-schaeftlarn"
-        - name: "Rund ums Konzert"
-          url: "/#fotos"
-        - name: "Gastronomie"
-          url: "/#gastronomie"
-    
-    - name: "Programm"
-      url: "/programm/"
-      weight: 20
-      hasChildren: true
-      children:
-        - name: "Spielplan 2025"
-          url: "/programm/2025/"
-    
-    - name: "Tickets"
-      url: "/tickets/"
-      weight: 30
-      hasChildren: true
-      children:
-        - name: "Tickets"
-          url: "/tickets/"
-        - name: "Preise"
-          url: "/tickets/#preise"
-    
-    - name: "Förderkreis"
-      url: "/foerderkreis/"
-      weight: 40
-      hasChildren: true
-      children:
-        - name: "Förderkreis"
-          url: "/foerderkreis/"
-        - name: "Fördern Sie mit!"
-          url: "/foerderkreis/#foerdern"
-    
-    - name: "Kontakt"
-      url: "/contact/"
-      weight: 50
-      hasChildren: true
-      children:
-        - name: "So erreichen Sie uns"
-          url: "/contact/"
-        - name: "So finden Sie zu uns"
-          url: "/contact/#weg"
 
 markup:
   goldmark:
