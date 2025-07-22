@@ -25,7 +25,7 @@ This is the website for Schäftlarner Konzerte, a classical music concert series
 **Configuration**
 - Primary config: `hugo.yaml` (German language site)
 - Backup config: `hugo.toml` (minimal fallback configuration)
-- Base URL: https://schaeftlarner-konzerte.de
+- Base URL: https://schaeftlarnerkonzerte.github.io
 
 **Content Structure**
 - `content/` - All site content in Markdown with YAML front matter

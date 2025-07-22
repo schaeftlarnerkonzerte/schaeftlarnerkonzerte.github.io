@@ -17,16 +17,13 @@ Die Schäftlarner Konzerte bieten jedes Jahr sinfonische, konzertante und Kammer
 
 ```
 ├── .github/workflows/    # GitHub Actions für automatisches Deployment
-├── website/              # Hugo Website
-│   ├── content/         # Markdown-Inhalte
-│   │   ├── konzerte/    # Konzert-Daten (für zukünftige Erweiterungen)
-│   │   ├── leitung/     # Informationen zur Leitung
-│   │   ├── programm/    # Spielpläne nach Jahren
-│   │   └── solisten/    # Solisten-Profile
-│   ├── layouts/         # Hugo Templates
-│   ├── static/          # Statische Dateien (CSS, JS, Bilder)
-│   └── hugo.toml        # Hugo Konfiguration
-├── www.schaeftlarner-konzerte.de/  # Alte statische Website (Referenz)
+├── content/             # Markdown-Inhalte
+│   ├── leitung/         # Informationen zur Leitung
+│   ├── programm/        # Spielpläne nach Jahren
+│   └── solisten/        # Solisten-Profile
+├── layouts/             # Hugo Templates
+├── static/              # Statische Dateien (CSS, JS, Bilder)
+├── hugo.yaml            # Hugo Konfiguration
 ├── HOWTO-KONZERTE.md    # Anleitung für neue Konzerte
 └── README.md            # Diese Datei
 ```
@@ -37,19 +34,19 @@ Die Schäftlarner Konzerte bieten jedes Jahr sinfonische, konzertante und Kammer
 
 Siehe detaillierte Anleitung in [`HOWTO-KONZERTE.md`](./HOWTO-KONZERTE.md)
 
-**Kurz:** Bearbeiten Sie `website/content/programm/JAHR.md` und fügen Sie ein neues Konzert zur `concerts:` Liste hinzu.
+**Kurz:** Bearbeiten Sie `content/programm/JAHR.md` und fügen Sie ein neues Konzert zur `concerts:` Liste hinzu.
 
 ### Solisten-Profile bearbeiten
 
-Solisten-Seiten befinden sich in `website/content/solisten/`. Jeder Solist hat eine eigene `.md` Datei.
+Solisten-Seiten befinden sich in `content/solisten/`. Jeder Solist hat eine eigene `.md` Datei.
 
 ### Andere Seiten bearbeiten
 
-- **Startseite:** `website/content/_index.md`
-- **Kontakt:** `website/content/contact.md`
-- **Förderkreis:** `website/content/foerderkreis.md`
-- **Impressum:** `website/content/impressum.md`
-- **Datenschutz:** `website/content/datenschutz.md`
+- **Startseite:** `content/_index.md`
+- **Kontakt:** `content/contact.md`
+- **Förderkreis:** `content/foerderkreis.md`
+- **Impressum:** `content/impressum.md`
+- **Datenschutz:** `content/datenschutz.md`
 
 ## 🛠️ Lokale Entwicklung
 
@@ -62,11 +59,8 @@ Solisten-Seiten befinden sich in `website/content/solisten/`. Jeder Solist hat e
 
 ```bash
 # Repository klonen
-git clone https://github.com/IHR-USERNAME/schaeftlarner-konzerte.git
-cd schaeftlarner-konzerte
-
-# In Website-Ordner wechseln
-cd website
+git clone https://github.com/schaeftlarnerkonzerte/schaeftlarnerkonzerte.github.io.git
+cd schaeftlarnerkonzerte.github.io
 
 # Lokalen Server starten
 hugo server
@@ -77,7 +71,6 @@ Die Website ist dann unter `http://localhost:1313` erreichbar.
 ### Website builden
 
 ```bash
-cd website
 hugo
 ```
 
@@ -90,7 +83,7 @@ Das Deployment erfolgt automatisch über GitHub Actions:
 1. **Push auf `main` Branch** → Automatisches Deployment
 2. **Manuell** → Im GitHub Repository unter "Actions" → "Deploy Hugo site to Pages"
 
-Die Website wird automatisch unter `https://IHR-USERNAME.github.io/schaeftlarner-konzerte/` verfügbar.
+Die Website wird automatisch unter `https://schaeftlarnerkonzerte.github.io/` verfügbar.
 
 ### GitHub Pages Setup
 
