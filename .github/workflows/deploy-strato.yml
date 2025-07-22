@@ -81,7 +81,27 @@ jobs:
           name: production-build
           path: ./public
       
-      - name: Deploy to Strato via SFTP
+      - name: Backup existing website (optional)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.STRATO_SFTP_HOST }}
+          username: ${{ secrets.STRATO_SFTP_USER }}
+          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          protocol: sftp
+          port: ${{ secrets.STRATO_SFTP_PORT || 22 }}
+          local-dir: ./backup/
+          server-dir: ${{ secrets.STRATO_SFTP_PATH || '/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .github/
+            *.md
+          dry-run: true
+          log-level: minimal
+        continue-on-error: true
+      
+      - name: Deploy to Strato via SFTP (Clean Sync)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.STRATO_SFTP_HOST }}
@@ -97,6 +117,10 @@ jobs:
             **/node_modules/**
             .github/
             *.md
+            .htaccess
+            .well-known/
+          # Wichtig: Löscht Dateien auf dem Server, die lokal nicht existieren
+          dangerous-clean-slate: true
           dry-run: false
           log-level: verbose
       
