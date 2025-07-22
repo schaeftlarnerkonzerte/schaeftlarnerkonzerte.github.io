@@ -41,7 +41,7 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if or (and (not (reflect.IsSlice $.Params.default_open)) (eq (add $index 1) $.Params.default_open)) (and (reflect.IsSlice $.Params.default_open) (in $.Params.default_open (add $index 1))) }} in{{ end }}">
+                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if or (and (not (reflect.IsSlice $.Params.default_open)) (eq (add $index 1) $.Params.default_open)) (and (reflect.IsSlice $.Params.default_open) (in $.Params.default_open (add $index 1))) }} in{{ end }}" data-concert-date="{{ $concert.date }}">
                                 <div class="panel-body">
                                     {{ if $concert.program }}
                                     <p>
@@ -109,8 +109,14 @@
 {{ define "scripts" }}
 <script>
 $(document).ready(function() {
-    // Check if there's a hash in the URL and open the corresponding accordion panel
-    if (window.location.hash) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0); // Set to start of day for comparison
+    
+    // Check if there's a specific hash in the URL (direct link)
+    var hasDirectLink = window.location.hash && window.location.hash.startsWith('#collapse');
+    
+    if (hasDirectLink) {
+        // Direct link behavior: Only open the specified panel
         var hash = window.location.hash;
         var target = $(hash);
         if (target.length && target.hasClass('panel-collapse')) {
@@ -123,6 +129,23 @@ $(document).ready(function() {
                 scrollTop: target.offset().top - 100
             }, 500);
         }
+    } else {
+        // Automatic behavior: Open future concerts, close past ones
+        $('.panel-collapse').each(function() {
+            var concertDateStr = $(this).data('concert-date');
+            if (concertDateStr) {
+                var concertDate = new Date(concertDateStr);
+                concertDate.setHours(0, 0, 0, 0);
+                
+                if (concertDate >= today) {
+                    // Future or today's concert: open it
+                    $(this).addClass('in');
+                } else {
+                    // Past concert: close it
+                    $(this).removeClass('in');
+                }
+            }
+        });
     }
 });
 </script>
