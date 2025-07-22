@@ -56,6 +56,7 @@ title: "Spielplan 2026"
 year: 2026
 layout: "spielplan"
 draft: false
+default_open: 1
 concerts:
   - title: "Erstes Konzert 2026"
     date: "2026-05-10"
@@ -71,32 +72,70 @@ concerts:
 
 ### Schritt 2: Navigation aktualisieren
 
-Bearbeiten Sie `hugo.yaml` und fügen Sie das neue Jahr zur Programm-Navigation hinzu:
+Bearbeiten Sie `data/navigation.yaml` und fügen Sie das neue Jahr zur Programm-Navigation hinzu:
 
 ```yaml
-menu:
-  main:
-    - name: "Programm"
-      url: "/programm/"
-      weight: 20
-      hasChildren: true
-      children:
-        - name: "Spielplan 2025"
-          url: "/programm/2025/"
-        - name: "Spielplan 2026"
-          url: "/programm/2026/"
+  - name: "Programm"
+    url: "/programm/"
+    children:
+      - name: "Spielplan 2025"
+        url: "/programm/2025/"
+      - name: "Spielplan 2026"
+        url: "/programm/2026/"
 ```
 
-## Spezielle Funktionen
+Details zur Navigation finden Sie in `HOWTO-NAVBAR.md`.
 
-### wes10brass Aufklapp-Link
+## Aufklapp-Verhalten steuern
+
+### Welches Konzert automatisch aufklappt
+
+Sie können steuern, welches Konzert beim Öffnen der Spielplan-Seite automatisch aufgeklappt ist:
+
+```yaml
+---
+title: "Spielplan 2025"
+year: 2025
+layout: "spielplan"
+draft: false
+default_open: 3    # ← Das 3. Konzert klappt automatisch auf
+concerts:
+  # ... Konzerte
+```
+
+**Optionen für `default_open:`**
+- `default_open: 1` → Erstes Konzert klappt auf
+- `default_open: 2` → Zweites Konzert klappt auf
+- `default_open: 3` → Drittes Konzert klappt auf
+- Kein `default_open:` → Alle Konzerte eingeklappt
+- `default_open: 0` → Alle Konzerte eingeklappt
+
+### Collapse-IDs verstehen
+
+Jedes Konzert bekommt automatisch eine eindeutige ID:
+- **1. Konzert** → `collapse1`
+- **2. Konzert** → `collapse2`
+- **3. Konzert** → `collapse3`
+- **4. Konzert** → `collapse4`
+- usw.
+
+Diese IDs können für direkte Links verwendet werden:
+- `/programm/2025/#collapse1` → Öffnet Spielplan 2025 mit 1. Konzert aufgeklappt
+- `/programm/2025/#collapse3` → Öffnet Spielplan 2025 mit 3. Konzert aufgeklappt
+
+### wes10brass Aufklapp-Link (Spezialfall)
 
 Wenn wes10brass auftritt und der Link von der Startseite funktionieren soll:
 
-1. Das wes10brass-Konzert sollte das **3. Konzert** in der Liste sein
-2. Oder Sie passen den Link in `content/_index.md` entsprechend an
+1. **Option A**: Das wes10brass-Konzert an die **3. Position** in der Liste setzen
+2. **Option B**: Den Link in `content/_index.md` an die korrekte Position anpassen
 
-Der aktuelle Link zeigt auf `#collapse3c`, was dem 3. Konzert entspricht.
+**Aktueller Link auf der Startseite**: `/programm/2025/#collapse3`
+
+Wenn wes10brass das 4. Konzert wäre, ändern Sie in `content/_index.md`:
+```markdown
+[wes10brass](/programm/2025/#collapse4)
+```
 
 ### Solisten-Links
 
@@ -113,6 +152,7 @@ title: "Spielplan 2025"
 year: 2025
 layout: "spielplan"
 draft: false
+default_open: 1
 concerts:
   - title: "Chaos und Paukenschlag"
     date: "2025-05-10"
