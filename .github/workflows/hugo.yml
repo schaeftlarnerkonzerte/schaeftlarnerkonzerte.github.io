@@ -1,27 +1,34 @@
-# GitHub Actions Workflow für Hugo Website Build und ZIP-Upload
-name: Build Hugo site and upload as ZIP
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
-  # Läuft bei Push auf main branch
+  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
-      - master
-  
-  # Ermöglicht manuelles Auslösen des Workflows
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Setzt Berechtigungen für GITHUB_TOKEN um Releases zu erstellen
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
-# Standard Shell für alle run steps
+# Allow only one concurrent deployment, skipping runs queued between the in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Build Job
+  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -31,61 +38,41 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      
       - name: Build with Hugo
         env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          TZ: Europe/Berlin
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "https://schaeftlarner-konzerte.de/"
-      
-      - name: Create ZIP archive
-        run: |
-          cd public
-          zip -r ../schaeftlarner-konzerte-website-$(date +%Y%m%d-%H%M%S).zip .
-          cd ..
-          echo "ZIP_FILE=$(ls schaeftlarner-konzerte-website-*.zip)" >> $GITHUB_ENV
-      
-      - name: Upload ZIP as artifact
-        uses: actions/upload-artifact@v4
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: website-build
-          path: ${{ env.ZIP_FILE }}
-          retention-days: 30
-      
-      - name: Create Release
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: build-${{ github.run_number }}
-          name: Website Build ${{ github.run_number }}
-          body: |
-            Automatischer Build der Schäftlarner Konzerte Website
-            
-            **Build Details:**
-            - Commit: ${{ github.sha }}
-            - Branch: ${{ github.ref_name }}
-            - Build Zeit: ${{ github.event.head_commit.timestamp }}
-            
-            **Installation:**
-            1. ZIP-Datei herunterladen
-            2. Entpacken auf Webserver
-            3. Webserver auf den entpackten Ordner zeigen lassen
-          files: ${{ env.ZIP_FILE }}
-          draft: false
-          prerelease: false
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
