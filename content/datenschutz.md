@@ -1,5 +1,10 @@
 ---
 title: "Datenschutz"
+aliases:
+  - /datenschutz.html
+  - /privacy.html
+  - /dsgvo.html
+  - /datenschutzerklaerung.html
 ---
 
 ## Datenschutzerklärung

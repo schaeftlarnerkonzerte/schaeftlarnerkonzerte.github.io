@@ -1,6 +1,10 @@
 ---
 title: "Solisten"
 description: "Die Künstler der Schäftlarner Konzerte"
+aliases:
+  - /solisten.html
+  - /kuenstler.html
+  - /musiker.html
 ---
 
 # Unsere Solisten

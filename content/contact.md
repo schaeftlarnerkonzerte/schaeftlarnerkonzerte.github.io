@@ -1,6 +1,9 @@
 ---
 title: "Kontakt"
 layout: "contact"
+aliases:
+  - /contact.html
+  - /kontakt.html
 
 intro_text: "Sie möchten Tickets kaufen, ein Abonnement bestellen oder haben Fragen rund um die Schäftlarner Konzerte? Bitte zögern Sie nicht, uns zu kontaktieren!"
 

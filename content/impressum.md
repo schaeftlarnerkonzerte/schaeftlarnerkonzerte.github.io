@@ -1,5 +1,9 @@
 ---
 title: "Impressum"
+aliases:
+  - /impressum.html
+  - /imprint.html
+  - /rechtliches.html
 ---
 
 ## Impressum

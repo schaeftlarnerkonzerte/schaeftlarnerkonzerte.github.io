@@ -1,6 +1,10 @@
 ---
 title: "Programm"
 description: "Spielplan der Schäftlarner Konzerte"
+aliases:
+  - /programm/spielplan.html
+  - /spielplan.html
+  - /programm/spielplan/
 ---
 
 # Spielplan

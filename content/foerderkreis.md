@@ -1,6 +1,10 @@
 ---
 title: "Förderkreis"
 layout: "foerderkreis"
+aliases:
+  - /foerderkreis.html
+  - /mitgliedschaft.html
+  - /unterstuetzen.html
 
 about_text: 'Der <i>Förderkreis Schäftlarner Konzerte e.&nbsp;V.</i> wurde im März 1999 gegründet, um die Zukunft der Schäftlarner Konzerte zu sichern. Die Konzertreihe bietet jedes Jahr sinfonische, konzertante und Kammermusik von Barock über Klassik bis Romantik unter ihrem künstlerischen Leiter Michael Forster. Ein Hauptgewicht liegt auf dem Werk von Mozart und dem gewaltigen, oft vernachlässigten sinfonischen Schaffen von Joseph Haydn. Veranstalter der Konzerte ist der Verein Schäftlarner Konzerte e.&nbsp;V.<br><br>Der Förderkreis hat in den Jahren seines Bestehens die Konzertreihe sehr erfolgreich in ideeller und finanzieller Hinsicht unterstützt. Ohne das Engagement eines musikbegeisterten Publikums, das sich im <i>Förderkreis Schäftlarner Konzerte e.&nbsp;V.</i> zusammengeschlossen hat, wäre eine konsequente Ausrichtung der Konzerte nicht möglich gewesen. Um die solistische und orchestrale Qualität dieser Reihe zu sichern, bedarf es auch in Zukunft der Unterstützung durch den <i>Förderkreis Schäftlarner Konzerte e.&nbsp;V.</i>'
 
