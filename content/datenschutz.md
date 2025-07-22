@@ -86,7 +86,7 @@ Sie haben ferner gem. Art. 77 DSGVO das Recht, eine Beschwerde bei der zuständi
 
 ### Widerrufsrecht
 
-Sie haben das Recht, erteilte Einwilligungen gem. Art. 7 Abs. 3 DSGVO mit Wirkung für die Zukunft zu widerrufen
+Sie haben das Recht, erteilte Einwilligungen gem. Art. 7 Abs. 3 DSGVO mit Wirkung für die Zukunft zu widerrufen.
 
 ### Widerspruchsrecht
 
