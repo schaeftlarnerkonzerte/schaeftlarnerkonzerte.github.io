@@ -31,7 +31,7 @@ gastronomie: >
   (ca. 1 km vom Kloster entfernt). Oder Sie genießen Blumenpracht und Springbrunnen im Prälatengarten.
 ---
 
-dass während eines Konzertes in der Klosterkirche gesprochen wird, ist eher ungewöhnlich. Wenn aber ein Blechblasensemble wie [wes10brass](/programm/2025/#collapse3c) zu Gast ist, wird die Moderation zum Teil des Konzerts.
+dass während eines Konzertes in der Klosterkirche gesprochen wird, ist eher ungewöhnlich. Wenn aber ein Blechblasensemble wie [wes10brass](/programm/2025/#collapse3) zu Gast ist, wird die Moderation zum Teil des Konzerts.
 
 Denn Blech zu Blasen ist ja wirklich eine sportive Angelegenheit.
 

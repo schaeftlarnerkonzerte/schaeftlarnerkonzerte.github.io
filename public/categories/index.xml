@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Schäftlarner Konzerte</title>
-    <link>http://localhost:1313/categories/index.html</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Schäftlarner Konzerte</description>
     <generator>Hugo</generator>
     <language>de</language>

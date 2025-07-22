@@ -32,7 +32,6 @@
                     <div class="panel-group accordion" id="accordionThree">
                         {{ range $index, $concert := .Params.concerts }}
                         {{ $collapseId := printf "collapse%d" (add $index 1) }}
-                        {{ if eq (add $index 1) 3 }}{{ $collapseId = "collapse3c" }}{{ end }}
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
@@ -42,7 +41,7 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if eq $collapseId "collapse3c" }} in{{ end }}">
+                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if and $.Params.default_open (eq (add $index 1) $.Params.default_open) }} in{{ end }}">
                                 <div class="panel-body">
                                     {{ if $concert.program }}
                                     <p>
