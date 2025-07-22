@@ -57,6 +57,7 @@ year: 2026
 layout: "spielplan"
 draft: false
 default_open: 1
+allow_multiple_open: false
 concerts:
   - title: "Erstes Konzert 2026"
     date: "2026-05-10"
@@ -88,9 +89,11 @@ Details zur Navigation finden Sie in `HOWTO-NAVBAR.md`.
 
 ## Aufklapp-Verhalten steuern
 
-### Welches Konzert automatisch aufklappt
+### Welche Konzerte automatisch aufklappen
 
-Sie können steuern, welches Konzert beim Öffnen der Spielplan-Seite automatisch aufgeklappt ist:
+Sie können steuern, welche Konzerte beim Öffnen der Spielplan-Seite automatisch aufgeklappt sind:
+
+#### Einzelnes Konzert aufklappen
 
 ```yaml
 ---
@@ -103,12 +106,76 @@ concerts:
   # ... Konzerte
 ```
 
+#### Mehrere Konzerte aufklappen
+
+```yaml
+---
+title: "Spielplan 2025"
+year: 2025
+layout: "spielplan"
+draft: false
+default_open: [1, 3, 5]        # ← 1., 3. und 5. Konzert klappen auf
+allow_multiple_open: true      # ← Mehrere Konzerte können gleichzeitig offen sein
+concerts:
+  # ... Konzerte
+```
+
 **Optionen für `default_open:`**
-- `default_open: 1` → Erstes Konzert klappt auf
-- `default_open: 2` → Zweites Konzert klappt auf
-- `default_open: 3` → Drittes Konzert klappt auf
+- `default_open: 1` → Nur das 1. Konzert klappt auf
+- `default_open: 2` → Nur das 2. Konzert klappt auf
+- `default_open: [1, 2]` → Das 1. und 2. Konzert klappen auf
+- `default_open: [1, 3, 5]` → Das 1., 3. und 5. Konzert klappen auf
 - Kein `default_open:` → Alle Konzerte eingeklappt
 - `default_open: 0` → Alle Konzerte eingeklappt
+
+### Mehrere Konzerte gleichzeitig offen halten
+
+Standardmäßig schließen sich andere Konzerte, wenn eines aufgeklappt wird (Accordion-Verhalten). Sie können das ändern:
+
+```yaml
+---
+title: "Spielplan 2025"
+allow_multiple_open: true    # ← Benutzer können mehrere Konzerte gleichzeitig öffnen
+---
+```
+
+**Optionen für `allow_multiple_open:`**
+- `allow_multiple_open: true` → Mehrere Konzerte können gleichzeitig offen sein
+- `allow_multiple_open: false` → Nur ein Konzert zur Zeit (Standard)
+- Kein Parameter → Nur ein Konzert zur Zeit (Standard)
+
+### Praktische Anwendungsfälle
+
+#### Klassisches Accordion (Standard)
+```yaml
+# Nur ein Konzert zur Zeit, keines standardmäßig offen
+year: 2025
+# allow_multiple_open: false (Standard)
+# default_open: (nicht gesetzt)
+```
+
+#### Hauptkonzert hervorheben
+```yaml
+# Ein wichtiges Konzert ist bereits aufgeklappt
+year: 2025
+default_open: 3  # wes10brass-Konzert
+```
+
+#### Saisonübersicht
+```yaml
+# Alle Konzerte sichtbar für bessere Übersicht
+year: 2025
+default_open: [1, 2, 3, 4, 5]
+allow_multiple_open: true
+```
+
+#### Flexible Benutzer-Erfahrung
+```yaml
+# Benutzer können mehrere vergleichen, aber wenige starten offen
+year: 2025  
+default_open: [1, 3]       # Erstes und drittes Konzert offen
+allow_multiple_open: true  # Benutzer kann weitere öffnen
+```
 
 ### Collapse-IDs verstehen
 
@@ -153,6 +220,7 @@ year: 2025
 layout: "spielplan"
 draft: false
 default_open: 1
+allow_multiple_open: false
 concerts:
   - title: "Chaos und Paukenschlag"
     date: "2025-05-10"

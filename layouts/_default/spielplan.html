@@ -35,13 +35,13 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="collapsed" href="#{{ $collapseId }}" data-toggle="collapse" data-parent="#accordionThree">
+                                    <a class="collapsed" href="#{{ $collapseId }}" data-toggle="collapse"{{ if not $.Params.allow_multiple_open }} data-parent="#accordionThree"{{ end }}>
                                         {{ dateFormat "2. January 2006" $concert.date | replaceRE "January" "Januar" | replaceRE "February" "Februar" | replaceRE "March" "März" | replaceRE "April" "April" | replaceRE "May" "Mai" | replaceRE "June" "Juni" | replaceRE "July" "Juli" | replaceRE "August" "August" | replaceRE "September" "September" | replaceRE "October" "Oktober" | replaceRE "November" "November" | replaceRE "December" "Dezember" }}
                                         <i>/ <span style="text-transform: none;">{{ $concert.title }}</span></i>
                                     </a>
                                 </h4>
                             </div>
-                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if and $.Params.default_open (eq (add $index 1) $.Params.default_open) }} in{{ end }}">
+                            <div id="{{ $collapseId }}" class="panel-collapse collapse{{ if or (and (not (reflect.IsSlice $.Params.default_open)) (eq (add $index 1) $.Params.default_open)) (and (reflect.IsSlice $.Params.default_open) (in $.Params.default_open (add $index 1))) }} in{{ end }}">
                                 <div class="panel-body">
                                     {{ if $concert.program }}
                                     <p>
