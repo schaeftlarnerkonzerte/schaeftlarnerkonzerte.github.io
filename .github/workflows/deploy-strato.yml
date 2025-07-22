@@ -97,7 +97,8 @@ jobs:
             **/node_modules/**
             .github/
             *.md
-            css/
+            css/**
+            **/css/**
           dry-run: false
           log-level: verbose
       
