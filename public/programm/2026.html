@@ -5,7 +5,7 @@
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories - Schäftlarner Konzerte</title>
+    <title>Spielplan 2026 - Schäftlarner Konzerte</title>
     <meta name="keywords" content="Schäftlarner Konzerte, Mozart, Haydn, Bach, Schubert, klassische Musik, Benno Forster, Michael Forster, Kloster Schäftlarn, Kirchenmusik, Barockmusik">
     <meta name="description" content="Die Konzertreihe südlich von München. Seit 1968.">
     
@@ -152,23 +152,105 @@
 </header>
     
     
-<section class="bar background-white">
+
+
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Programm</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="../">Home</a></li>
+                    <li>spielplan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="bar background-gray no-mb" id="programm">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="heading text-center">
-                    <h1>Categories</h1>
+                    <h2>Spielplan 2026</h2>
+                </div>
+                <p class="lead">Es spielt das Orchester der Schäftlarner Konzerte. Der Konzertbeginn ist um 19:00 Uhr. Der Einlass öffnet eine halbe Stunde vor Konzertbeginn. Änderungen vorbehalten.</p>
+                
+                
+                <div class="col-md-14">
+                    <div class="panel-group accordion" id="accordionThree">
+                        
+                        
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" href="#collapse1" data-toggle="collapse" data-parent="#accordionThree">
+                                        2. Januar 2026
+                                        <i>/ <span style="text-transform: none;">Test 2026</span></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    
+                                    <p>
+                                        
+                                        TestProgramm<br>
+                                        
+                                        Test2<br>
+                                        
+                                    </p>
+                                    
+                                    
+                                    
+                                    <p>
+                                        
+                                        
+                                        
+                                            
+                                                
+                                            
+                                        
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a style="color:rgb(150,190,255);" href="../solisten/test/">Test</a>
+                                        <br>
+                                        
+                                        
+                                        
+                                        
+                                        <br><br>
+                                        
+                                        <a style="font-style:oblique;font-size:1.05em;font-weight:800;" target="_blank" href="https://www.muenchenticket.de/event/schaeftlarner-konzerte-2025-31548/428281/">
+                                            Tickets für dieses Konzert sichern ab €&nbsp;25
+                                        </a>
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
                 
-                
-                
-                <div class="row">
-                    
-                </div>
             </div>
         </div>
     </div>
 </section>
+
 
     
     <div id="copyright">
@@ -207,6 +289,26 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/cookie-consent.js"></script>
 
+
+<script>
+$(document).ready(function() {
+    
+    if (window.location.hash) {
+        var hash = window.location.hash;
+        var target = $(hash);
+        if (target.length && target.hasClass('panel-collapse')) {
+            
+            $('.panel-collapse').removeClass('in');
+            
+            target.addClass('in');
+            
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 500);
+        }
+    }
+});
+</script>
 
 </body>
 </html>

@@ -2,6 +2,8 @@ baseURL: 'https://schaeftlarner-konzerte.de'
 languageCode: 'de'
 title: 'Schäftlarner Konzerte'
 defaultContentLanguage: 'de'
+relativeURLs: true
+uglyURLs: true
 
 params:
   description: 'Die Konzertreihe südlich von München. Seit 1968.'

@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/solisten/alejandro-marco-buhrmester/</loc>
+    <loc>http://localhost:1313/solisten/alejandro-marco-buhrmester.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/andreas-schablas/</loc>
+    <loc>http://localhost:1313/solisten/andreas-schablas.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/emanuel-graf/</loc>
+    <loc>http://localhost:1313/solisten/emanuel-graf.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/gael-gandino/</loc>
+    <loc>http://localhost:1313/solisten/gael-gandino.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/harald-harrer/</loc>
+    <loc>http://localhost:1313/solisten/harald-harrer.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/jihyun-cecilia-lee/</loc>
+    <loc>http://localhost:1313/solisten/jihyun-cecilia-lee.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/</loc>
+    <loc>http://localhost:1313/solisten/index.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/solisten/wes10brass/</loc>
+    <loc>http://localhost:1313/solisten/wes10brass.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>http://localhost:1313/index.html</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/leitung/benno-forster/</loc>
+    <loc>http://localhost:1313/leitung/benno-forster.html</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://localhost:1313/categories/index.html</loc>
   </url><url>
-    <loc>https://example.org/datenschutz/</loc>
+    <loc>http://localhost:1313/datenschutz.html</loc>
   </url><url>
-    <loc>https://example.org/debug/</loc>
+    <loc>http://localhost:1313/debug.html</loc>
   </url><url>
-    <loc>https://example.org/foerderkreis/</loc>
+    <loc>http://localhost:1313/foerderkreis.html</loc>
   </url><url>
-    <loc>https://example.org/impressum/</loc>
+    <loc>http://localhost:1313/impressum.html</loc>
   </url><url>
-    <loc>https://example.org/contact/</loc>
+    <loc>http://localhost:1313/contact.html</loc>
   </url><url>
-    <loc>https://example.org/leitung/</loc>
+    <loc>http://localhost:1313/leitung/index.html</loc>
   </url><url>
-    <loc>https://example.org/leitung/michael-forster/</loc>
+    <loc>http://localhost:1313/leitung/michael-forster.html</loc>
   </url><url>
-    <loc>https://example.org/praelatengarten/</loc>
+    <loc>http://localhost:1313/praelatengarten.html</loc>
   </url><url>
-    <loc>https://example.org/programm/</loc>
+    <loc>http://localhost:1313/programm/index.html</loc>
   </url><url>
-    <loc>https://example.org/programm/2025/</loc>
+    <loc>http://localhost:1313/programm/2025.html</loc>
   </url><url>
-    <loc>https://example.org/programm/2026/</loc>
+    <loc>http://localhost:1313/programm/2026.html</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://localhost:1313/tags/index.html</loc>
   </url><url>
-    <loc>https://example.org/tickets/</loc>
+    <loc>http://localhost:1313/tickets.html</loc>
   </url><url>
-    <loc>https://example.org/vleugels-orgel/</loc>
+    <loc>http://localhost:1313/vleugels-orgel.html</loc>
   </url>
 </urlset>

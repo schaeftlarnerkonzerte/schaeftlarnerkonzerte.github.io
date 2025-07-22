@@ -6,8 +6,6 @@ Diese Anleitung erklärt, wie Sie Einträge in der Navigationsleiste (Navbar) de
 
 Die Navigation wird automatisch aus der Datei `data/navigation.yaml` generiert. Diese Datei enthält alle Menüpunkte und deren Untermenüs in strukturierter Form.
 
-**Wichtiger Hinweis:** Die Menü-Konfiguration in `hugo.yaml` wird **nicht mehr verwendet** und kann entfernt werden. Die Navigation funktioniert ausschließlich über `data/navigation.yaml`.
-
 ## Navigation bearbeiten
 
 ### Datei öffnen
