@@ -1,0 +1,2 @@
+# This file keeps the resources/ directory in git
+# The resources/ directory will be ignored by .gitignore but this empty file ensures the directory structure exists
