@@ -1,0 +1,109 @@
+# Separater Workflow für Strato Deployment
+name: Deploy to Strato (Production)
+
+on:
+  # Nur manuell auslösbar - kein automatisches Deployment
+  workflow_dispatch:
+    inputs:
+      confirm_deployment:
+        description: 'Bestätigung für Production Deployment (ja/nein)'
+        required: true
+        default: 'nein'
+        type: choice
+        options:
+          - 'nein'
+          - 'ja'
+
+# Berechtigungen
+permissions:
+  contents: read
+
+# Standard Shell
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build Job für Production
+  build-production:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm_deployment == 'ja'
+    env:
+      HUGO_VERSION: 0.148.1
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+      
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      
+      - name: Build with Hugo for Production
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+          TZ: Europe/Berlin
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "https://schaeftlarner-konzerte.de/"
+      
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-build
+          path: ./public
+          retention-days: 7
+
+  # SFTP Deployment Job
+  deploy-strato:
+    runs-on: ubuntu-latest
+    needs: build-production
+    if: github.event.inputs.confirm_deployment == 'ja'
+    environment: 
+      name: production
+      url: https://schaeftlarner-konzerte.de
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: production-build
+          path: ./public
+      
+      - name: Deploy to Strato via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.STRATO_SFTP_HOST }}
+          username: ${{ secrets.STRATO_SFTP_USER }}
+          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          protocol: sftp
+          port: ${{ secrets.STRATO_SFTP_PORT || 22 }}
+          local-dir: ./public/
+          server-dir: ${{ secrets.STRATO_SFTP_PATH || '/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .github/
+            *.md
+          dry-run: false
+          log-level: verbose
+      
+      - name: Deployment Summary
+        run: |
+          echo "🚀 Deployment zu Strato erfolgreich abgeschlossen!"
+          echo "📅 Deployment Zeit: $(date)"
+          echo "🌐 Website: https://schaeftlarner-konzerte.de"
+          echo "📝 Commit: ${{ github.sha }}"
+          echo "🔗 Branch: ${{ github.ref_name }}"
