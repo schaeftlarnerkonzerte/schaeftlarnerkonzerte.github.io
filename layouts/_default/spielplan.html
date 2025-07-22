@@ -75,7 +75,7 @@
                                                     {{ $instrument = strings.TrimSpace (printf "%s" $rawInstrument) }}
                                                 {{ end }}
                                             {{ end }}
-                                            {{ $urlName := $name | lower | replaceRE "\\s+" "-" | replaceRE "[^a-z0-9-]" "" }}
+                                            {{ $urlName := $name | lower | replaceRE "ë" "e" | replaceRE "ä" "a" | replaceRE "ö" "o" | replaceRE "ü" "u" | replaceRE "à" "a" | replaceRE "á" "a" | replaceRE "â" "a" | replaceRE "ã" "a" | replaceRE "å" "a" | replaceRE "æ" "ae" | replaceRE "ç" "c" | replaceRE "è" "e" | replaceRE "é" "e" | replaceRE "ê" "e" | replaceRE "ì" "i" | replaceRE "í" "i" | replaceRE "î" "i" | replaceRE "ï" "i" | replaceRE "ñ" "n" | replaceRE "ò" "o" | replaceRE "ó" "o" | replaceRE "ô" "o" | replaceRE "õ" "o" | replaceRE "ø" "o" | replaceRE "ù" "u" | replaceRE "ú" "u" | replaceRE "û" "u" | replaceRE "ý" "y" | replaceRE "ÿ" "y" | replaceRE "\\s+" "-" | replaceRE "[^a-z0-9-]" "" }}
                                             <a style="color:rgb(150,190,255);" href="/solisten/{{ $urlName }}/">{{ $name }}</a>{{ if $instrument }}, {{ $instrument }}{{ end }}
                                         {{ end }}<br>
                                         {{ end }}
