@@ -81,7 +81,7 @@ jobs:
           name: production-build
           path: ./public
       
-      - name: Deploy to Strato via FTP (Clean Sync)
+      - name: Deploy to Strato via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.STRATO_FTP_HOST }}
@@ -97,10 +97,7 @@ jobs:
             **/node_modules/**
             .github/
             *.md
-            .htaccess
-            .well-known/
-          # Wichtig: Löscht Dateien auf dem Server, die lokal nicht existieren
-          dangerous-clean-slate: true
+            css/
           dry-run: false
           log-level: verbose
       
