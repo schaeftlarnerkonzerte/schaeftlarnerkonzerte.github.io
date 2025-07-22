@@ -99,6 +99,8 @@ jobs:
             *.md
             css/**
             **/css/**
+          # Überschreibt existierende Dateien
+          state-name: .ftp-deploy-sync-state.json
           dry-run: false
           log-level: verbose
       
