@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<!-- breadcrumb -->
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="/leitung/michael-forster/">über</a></li>
+                    <li>Michael Forster</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="team-member-detail">
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Michael Forster über „wes10brass"<br>bei den Schäftlarner Konzerten</h2>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="lead">
+                        {{ .Content }}
+                    </div>
+                    
+                    <div class="heading">
+                        <h3>Weitere Infos</h3>
+                    </div>
+                    <ul class="ul-icons">
+                        <li>
+                            <p class="lead"><i class="fa-solid fa-check"></i><a href="http://www.wes10brass.de/Mitglieder/Forster/page15.html" target="_blank">wes10brass</a></p>
+                        </li>
+                        <li>
+                            <p class="lead"><i class="fa-solid fa-check"></i><a href="https://www.sueddeutsche.de/muenchen/wolfratshausen/schaeftlarner-konzerte-barock-ensemble-colcanto-franz-vitzthum-lux.RJzLz6shRhUWzgQXwQ1cTE" target="_blank">Barock von Bach bis Bond</a></p>
+                        </li>
+                        <li>
+                            <p class="lead"><i class="fa-solid fa-check"></i><a href="https://www.sueddeutsche.de/muenchen/wolfratshausen/schaeftlarner-konzerte-auftakt-1.6940930" target="_blank">Glanz und Gloria</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" alt="Michael Forster" src="/img/musiker/juckel.jpg">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+{{ end }}
