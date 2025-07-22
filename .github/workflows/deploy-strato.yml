@@ -81,36 +81,16 @@ jobs:
           name: production-build
           path: ./public
       
-      - name: Backup existing website (optional)
+      - name: Deploy to Strato via FTP (Clean Sync)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.STRATO_SFTP_HOST }}
-          username: ${{ secrets.STRATO_SFTP_USER }}
-          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
-          protocol: sftp
-          port: ${{ secrets.STRATO_SFTP_PORT || 22 }}
-          local-dir: ./backup/
-          server-dir: ${{ secrets.STRATO_SFTP_PATH || '/' }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            .github/
-            *.md
-          dry-run: true
-          log-level: minimal
-        continue-on-error: true
-      
-      - name: Deploy to Strato via SFTP (Clean Sync)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.STRATO_SFTP_HOST }}
-          username: ${{ secrets.STRATO_SFTP_USER }}
-          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
-          protocol: sftp
-          port: ${{ secrets.STRATO_SFTP_PORT || 22 }}
+          server: ${{ secrets.STRATO_FTP_HOST }}
+          username: ${{ secrets.STRATO_FTP_USER }}
+          password: ${{ secrets.STRATO_FTP_PASSWORD }}
+          protocol: ftp
+          port: ${{ secrets.STRATO_FTP_PORT || 21 }}
           local-dir: ./public/
-          server-dir: ${{ secrets.STRATO_SFTP_PATH || '/' }}
+          server-dir: ${{ secrets.STRATO_FTP_PATH || '/' }}
           exclude: |
             **/.git*
             **/.git*/**

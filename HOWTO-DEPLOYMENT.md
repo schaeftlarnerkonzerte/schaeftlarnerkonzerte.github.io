@@ -52,24 +52,24 @@ Diese Anleitung erklärt den zweistufigen Deployment-Prozess für die Schäftlar
 
 ### GitHub Secrets einrichten
 
-Die SFTP-Zugangsdaten müssen als GitHub Secrets hinterlegt werden:
+Die FTP-Zugangsdaten müssen als GitHub Secrets hinterlegt werden:
 
 1. **Repository Settings** → **Secrets and variables** → **Actions**
 2. **New repository secret** für jeden Wert:
 
 ```
-STRATO_SFTP_HOST     = ftp.strato.de (oder Ihr SFTP-Host)
-STRATO_SFTP_USER     = ihr-benutzername
-STRATO_SFTP_PASSWORD = ihr-passwort
-STRATO_SFTP_PORT     = 22 (Standard SFTP Port)
-STRATO_SFTP_PATH     = / (oder Pfad zu Ihrem Web-Verzeichnis)
+STRATO_FTP_HOST     = ftp.strato.de (oder Ihr FTP-Host)
+STRATO_FTP_USER     = ihr-benutzername
+STRATO_FTP_PASSWORD = ihr-passwort
+STRATO_FTP_PORT     = 21 (Standard FTP Port)
+STRATO_FTP_PATH     = / (oder Pfad zu Ihrem Web-Verzeichnis)
 ```
 
-### Strato SFTP-Zugang aktivieren
+### Strato FTP-Zugang
 
-Falls noch nicht geschehen:
+Die FTP-Zugangsdaten finden Sie:
 1. **Strato Kunden-Login** → **Paket-Verwaltung**
-2. **SSH/SFTP-Zugang** aktivieren
+2. **FTP-Zugangsdaten** anzeigen
 3. **Zugangsdaten** notieren für GitHub Secrets
 
 ## Sicherheitsfeatures
