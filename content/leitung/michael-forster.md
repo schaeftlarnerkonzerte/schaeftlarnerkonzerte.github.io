@@ -7,7 +7,7 @@ links:
   - title: "wes10brass"
     url: "http://www.wes10brass.de/Mitglieder/Forster/page15.html"
   - title: "Bergische Symphoniker"
-    url: "https://www.bergischesymphoniker.de/wir/orchestermusiker/"
+    url: "https://www.bergischesymphoniker.de/"
   - title: "Ein Ensemble mit Strahlkraft: Michael Forster über 'wes10brass' bei den Schäftlarner Konzerten"
     url: "/interview-michael-forster-wes10brass/"
 ---
