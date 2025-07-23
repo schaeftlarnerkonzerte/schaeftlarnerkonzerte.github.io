@@ -10,7 +10,11 @@ about_text: 'Der <i>Förderkreis Schäftlarner Konzerte e.&nbsp;V.</i> wurde im 
 
 statute_info: 'Die Satzung des <i>Förderkreises Schäftlarner Konzerte e.&nbsp;V.</i><br>können Sie hier <a href="/downloads/Satzung_Foerderkreis_Schaeftlarner_Konzerte_eV.pdf">als PDF-Datei herunterladen</a>.'
 
-contact_info: 'c/o RAin Susanne Rieder<br>Bahnhofstr. 15<br>82515 Wolfratshausen<br><a href="mailto:foerderkreis@schaeftlarner-konzerte.de?Subject=Interesse%20am%20Förderkreis">foerderkreis@schaeftlarner-konzerte.de</a><br>Telefax: 08171/43 30-30<br><br>Vorstand:<br>1. Vorsitzende: Rechtsanwältin Susanne Rieder,<br>2. Vorsitzender: Prof. Dr. Wolfgang Thasler,<br>Schriftführerin: Anja Brandstäter,<br>Schatzmeister: Oliver Schmidt<br>Vereinsregisternummer: VR 16532<br>Amtsgericht München<br>Steuernummer: 143/214/50300<br>Finanzamt München<br>Der Verein ist gemeinnützig i.S.d. §§ 51 ff. AO<br><br>Bankverbindung:<br>Kreissparkasse München Starnberg Ebersberg<br>IBAN: DE23 7025 0150 0005 1329 72<br>BIC: BYLADEM1KMS'
+contact_info: 'c/o RAin Susanne Rieder<br>Bahnhofstr. 15<br>82515 Wolfratshausen<br><a href="mailto:foerderkreis@schaeftlarner-konzerte.de?Subject=Interesse%20am%20Förderkreis">foerderkreis@schaeftlarner-konzerte.de</a><br>Telefax: 08171/43 30-30'
+
+vorstand_info: 'Rechtsanwältin Susanne Rieder,<br>2. Vorsitzender: Prof. Dr. Wolfgang Thasler,<br>Schriftführerin: Anja Brandstäter,<br>Schatzmeister: Oliver Schmidt<br>Vereinsregisternummer: VR 16532<br>Amtsgericht München<br>Steuernummer: 143/214/50300<br>Finanzamt München<br>Der Verein ist gemeinnützig i.S.d. §§ 51 ff. AO'
+
+bank_info: 'Kreissparkasse München Starnberg Ebersberg<br>IBAN: DE23 7025 0150 0005 1329 72<br>BIC: BYLADEM1KMS'
 
 support_text: 'Unterstützen Sie die Arbeit des <i>Förderkreises Schäftlarner Konzerte e.&nbsp;V.</i> <a href="/downloads/Mitgliedsantrag_Schaeftlarner_Konzerte_eV.pdf"><br>Werden Sie Mitglied</a> und tragen Sie damit zu einer erfolgreichen Zukunft der Schäftlarner Konzerte bei!<br><a href="/downloads/Mitgliedsantrag_Schaeftlarner_Konzerte_eV.pdf">Laden Sie den Aufnahmeantrag herunter</a>, und senden Sie ihn noch heute ausgefüllt ab:'
 
