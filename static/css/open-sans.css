@@ -3,16 +3,16 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/opensans/OpenSans-Regular.woff2') format('woff2'),
-       url('/fonts/opensans/OpenSans-Regular.woff') format('woff');
+  src: url('/fonts/open-sans/OpenSans-Regular.woff2') format('woff2'),
+       url('/fonts/open-sans/OpenSans-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
-       url('/fonts/opensans/OpenSans-Bold.woff') format('woff');
+  src: url('/fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+       url('/fonts/opens-ans/OpenSans-Bold.woff') format('woff');
 }
 
 body {
