@@ -46,6 +46,6 @@ Warum das alles so kommt, wie's kommen musste, entnehmen Sie bitte dem [Gespräc
 Karten bekommen Sie bei [München-Ticket](https://www.muenchenticket.de/event/schaeftlarner-konzerte-2025-31548/), [Abonnements](mailto:kontakt@schaeftlarner-konzerte.de?subject=Abonnementbestellung) haben wir für Sie jederzeit, auch während der laufenden Saison, vorrätig.
 
 Ich wünsche Ihnen einen vergnüglichen Schäftlarner Konzertabend und natürlich: gute Reise!
-<br>
+<br><br>
 Herzlich  
 Ihr Michael Forster
