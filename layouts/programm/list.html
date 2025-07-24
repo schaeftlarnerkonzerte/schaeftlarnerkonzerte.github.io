@@ -1,5 +1,6 @@
 {{ define "main" }}
 <link rel="stylesheet" href="{{ "css/spielplan.css" | relURL }}">
+
 <section class="spielplan-grid">
   {{ range .Pages.ByDate.Reverse }}
   <article class="spielplan-card">
@@ -7,8 +8,8 @@
       <img class="spielplan-img" src="{{ . | relURL }}" alt="Bild zu {{ .Title }}">
     {{ end }}
     <div class="spielplan-content">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>
-      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <time datetime="{{ .Date }}">{{ .Date.Format "02.01.2006" }}</time>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       <p><strong>Ort:</strong> {{ .Params.location }}</p>
       {{ with .Params.programm }}<p>{{ . | markdownify }}</p>{{ end }}
       {{ with .Params.solists }}<p><strong>Solist:innen:</strong> {{ . }}</p>{{ end }}
