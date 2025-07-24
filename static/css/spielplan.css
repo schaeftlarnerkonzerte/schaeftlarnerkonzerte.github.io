@@ -78,3 +78,11 @@
 .spielplan-button:hover {
   background-color: #0066cc;
 }
+
+.spielplan-einzelseite img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
