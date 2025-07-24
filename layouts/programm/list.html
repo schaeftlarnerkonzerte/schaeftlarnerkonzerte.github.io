@@ -1,5 +1,5 @@
 {{ define "main" }}
- <link href="/css/spielplan.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/spielplan.css" | relURL }}">
 <section class="spielplan-grid">
   {{ range .Pages.ByDate.Reverse }}
   <article class="spielplan-card">
