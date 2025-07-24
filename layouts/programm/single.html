@@ -1,3 +1,6 @@
+{{ define "main" }}
+<link rel="stylesheet" href="{{ "css/spielplan.css" | relURL }}">
+
 <article class="spielplan-einzelseite">
   <h1>{{ .Title }}</h1>
   <p><strong>Ort:</strong> {{ .Params.location }}</p>
