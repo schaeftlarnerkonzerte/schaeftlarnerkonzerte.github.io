@@ -2,23 +2,28 @@
 <link rel="stylesheet" href="{{ "css/spielplan.css" | relURL }}">
 
 <section class="spielplan-grid">
-  {{ range .Pages.ByDate.Reverse }}
-  <article class="spielplan-card">
-    {{ with .Params.bild }}
-      <img class="spielplan-img" src="{{ . | relURL }}" alt="Bild zu {{ .Title }}">
+  {{ $pages := .Pages }}
+  {{ if and $pages (gt (len $pages) 0) }}
+    {{ range $pages.ByDate.Reverse }}
+      <article class="spielplan-card">
+        {{ with .Params.bild }}
+          <img class="spielplan-img" src="{{ . | relURL }}" alt="Bild zu {{ .Title }}">
+        {{ end }}
+        <div class="spielplan-content">
+          <time datetime="{{ .Date }}">{{ .Date.Format "02.01.2006" }}</time>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p><strong>Ort:</strong> {{ .Params.location }}</p>
+          {{ with .Params.programm }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .Params.solists }}<p><strong>Solist:innen:</strong> {{ . }}</p>{{ end }}
+          {{ with .Params.leitung }}<p><strong>Leitung:</strong> {{ . }}</p>{{ end }}
+          {{ with .Params.tickets }}
+            <p><a class="spielplan-button" href="{{ .url }}">🎟 Tickets ab €{{ .price }}</a></p>
+          {{ end }}
+        </div>
+      </article>
     {{ end }}
-    <div class="spielplan-content">
-      <time datetime="{{ .Date }}">{{ .Date.Format "02.01.2006" }}</time>
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-      <p><strong>Ort:</strong> {{ .Params.location }}</p>
-      {{ with .Params.programm }}<p>{{ . | markdownify }}</p>{{ end }}
-      {{ with .Params.solists }}<p><strong>Solist:innen:</strong> {{ . }}</p>{{ end }}
-      {{ with .Params.leitung }}<p><strong>Leitung:</strong> {{ . }}</p>{{ end }}
-      {{ with .Params.tickets }}
-        <p><a class="spielplan-button" href="{{ .url }}">🎟 Tickets ab €{{ .price }}</a></p>
-      {{ end }}
-    </div>
-  </article>
+  {{ else }}
+    <p>Keine Veranstaltungen gefunden.</p>
   {{ end }}
 </section>
 {{ end }}
