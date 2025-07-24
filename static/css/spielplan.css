@@ -1,0 +1,51 @@
+.spielplan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.spielplan-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spielplan-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.spielplan-content {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.spielplan-content time {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.spielplan-content h3 {
+  margin: 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+.spielplan-button {
+  display: inline-block;
+  background: #0078D4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.spielplan-button:hover {
+  background: #005fa3;
+}
