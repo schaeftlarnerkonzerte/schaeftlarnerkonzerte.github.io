@@ -31,21 +31,20 @@ gastronomie: >
   (ca. 1 km vom Kloster entfernt). Oder Sie genießen Blumenpracht und Springbrunnen im Prälatengarten.
 ---
 
-dass während eines Konzertes in der Klosterkirche gesprochen wird, ist eher ungewöhnlich. Wenn aber ein Blechblasensemble wie [wes10brass](/programm/2025/#collapse3) zu Gast ist, wird die Moderation zum Teil des Konzerts.
+kaum ein Lebewesen hat die Komponisten derart beschäftigt wie der Vogel. Das ist verständlich, hat er doch modisch wie akustisch Ansprechenderes zu bieten als zum Beispiel Damwild oder Maulwurf. Ganz oben auf der Hitliste des gepflegten Tirilis: Nachtigall und Kuckuck (Händel/Beethoven/Saint-Saëns), gefolgt von Wachtel (Beethoven), Haushuhn (Rameau), Stieglitz (Vivaldi) und die nimmermüde Feldlerche
+(Vaughan Williams, Tschaikowsky). Olivier Messiaen soll sogar 320 (!) Vogelstimmen verkomponiert haben. Was für eine Mühe.
 
-Denn Blech zu Blasen ist ja wirklich eine sportive Angelegenheit.
+Ottorino Respighi hat in seinen „Vögeln“ vernünftigerweise nur vier Gesängen einen solistischen Auftritt gewährt. Taube, Henne, Nachtigall und Kuckuck, erklingen hier in herrlich barockem Technicolor. Und wer Lust hat zu lauschen, entdeckt neben flatternden Flügeln, pickenden Schnäbeln auch niedlich kratzende Füße. 
 
-Keine andere Instrumentengattung verlangt so viel elastische Muskelkraft von Musikers Mund, und nirgends sonst ist das urmusikalische Prinzip von Spannung und Entspannung auch physisch so notwendig wie im blechernen Ensemble: Wer ein paar instrumentale Rittberger vor sich hat, sollte locker bleiben.
+Nun aber aus irdischen Lüften in himmlische Weiten: die Harfe. Wir hören das vielleicht [schönste Harfenkonzert](/programm/2025/#collapse4) der klassischen Konzertliteratur unter den wachsamen Augen und Ohren König Davids, der im Deckenfresko über unserer Orgel schon seit Jahrhunderten vergnügt die Harfe schlägt im Kreise der musizierenden Engel.
 
-Da helfen eben ein paar Worte zwischen den Werken, manchmal auch zwischen einzelnen Sätzen, wieder durchzuatmen, etwas zu entspannen und vielleicht das Instrument zu wechseln fürs nächste Stück.
-
-Für mich bedeutet das die eben auch seltene Möglichkeit, mit Ihnen direkt in Kontakt zu treten, Sie sozusagen als Reisebegleiter durch das Konzert führen, mit Ihnen zusammen auf Zeitreise zu gehen durch die Jahrhunderte der blechgeblasenen Unterhaltungsmusik.
-
-Warum das alles so kommt, wie's kommen musste, entnehmen Sie bitte dem [Gespräch](/interview-michael-forster-wes10brass/), das ich mit Friedrich-Karl Bruhns geführt habe.
+Der große Sänger hätte auch sicher seine Freude an einer der letzten großen Sinfonien Haydns, der 101, „Die Uhr“. Was soll man sagen: Londoner Abendstraßeneleganz im
+Isartal. Ob diese Sinfonie aber wirklich etwas mit einer Uhr zu tun hat und warum die Fagotte hier das Maß alles Dinge sind, werden wir dann nach der Pause klären.
+Manchmal hatten wir Septemberschwalben in der Kirche, die zwitscherten zur Musik. 
+Das würde gut zu diesem Abend passen.
 
 Karten bekommen Sie bei [München-Ticket](https://www.muenchenticket.de/event/schaeftlarner-konzerte-2025-31548/), [Abonnements](mailto:kontakt@schaeftlarner-konzerte.de?subject=Abonnementbestellung) haben wir für Sie jederzeit, auch während der laufenden Saison, vorrätig.
 
-Ich wünsche Ihnen einen vergnüglichen Schäftlarner Konzertabend und natürlich: gute Reise!
 <br><br>
 Herzlich  
 Ihr Michael Forster
