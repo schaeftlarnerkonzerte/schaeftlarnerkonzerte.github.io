@@ -31,19 +31,20 @@ gastronomie: >
   (ca. 1 km vom Kloster entfernt). Oder Sie genießen Blumenpracht und Springbrunnen im Prälatengarten.
 ---
 
-kaum ein Lebewesen hat die Komponisten derart beschäftigt wie der Vogel. Das ist verständlich, hat er doch modisch wie akustisch Ansprechenderes zu bieten als zum Beispiel Damwild oder Maulwurf. Ganz oben auf der Hitliste des gepflegten Tirilis: Nachtigall und Kuckuck (Händel/Beethoven/Saint-Saëns), gefolgt von Wachtel (Beethoven), Haushuhn (Rameau), Stieglitz (Vivaldi) und die nimmermüde Feldlerche
-(Vaughan Williams, Tschaikowsky). Olivier Messiaen soll sogar 320 (!) Vogelstimmen verkomponiert haben. Was für eine Mühe.
+Jetzt hab ich doch tatsächlich diesem letzten Konzert die Überschrift "Dreierlei vom Herbst" gegeben, und nun fällt mir beim genaueren Studium des Haydnschen Cellokonzertes auf, dass dieses Konzert eher einem heiteren Sommertag gleicht, als einem ruhigen Herbstabend.
 
-Ottorino Respighi hat in seinen „Vögeln“ vernünftigerweise nur vier Gesängen einen solistischen Auftritt gewährt. Taube, Henne, Nachtigall und Kuckuck, erklingen hier in herrlich barockem Technicolor. Und wer Lust hat zu lauschen, entdeckt neben flatternden Flügeln, pickenden Schnäbeln auch niedlich kratzende Füße. 
+So festlich und in fast noch barocker Manier scheint es dem jungen Haydn von leichter Feder aufs Papier gepurzelt zu sein, dass ein Gedanke an Herbst sich gar nicht einstellen mag.
 
-Nun aber aus irdischen Lüften in himmlische Weiten: die Harfe. Wir hören das vielleicht [schönste Harfenkonzert](/programm/2025/#collapse4) der klassischen Konzertliteratur unter den wachsamen Augen und Ohren König Davids, der im Deckenfresko über unserer Orgel schon seit Jahrhunderten vergnügt die Harfe schlägt im Kreise der musizierenden Engel.
+Vielleicht hat er das Konzert ja im Herbst geschrieben, man weiß es nicht und ich glaub, man könnte es dem Werk auch nicht anhören, denn selbst wenn es bei Haydn abgründig wird, bleibt er seiner gelassenen Freundlichkeit gegenüber der Welt treu.
 
-Der große Sänger hätte auch sicher seine Freude an einer der letzten großen Sinfonien Haydns, der 101, „Die Uhr“. Was soll man sagen: Londoner Abendstraßeneleganz im
-Isartal. Ob diese Sinfonie aber wirklich etwas mit einer Uhr zu tun hat und warum die Fagotte hier das Maß alles Dinge sind, werden wir dann nach der Pause klären.
-Manchmal hatten wir Septemberschwalben in der Kirche, die zwitscherten zur Musik. 
-Das würde gut zu diesem Abend passen.
+Für seinen Brotherren Fürst Ézterhazy waren ja selbst seine Messen zu fröhlich, aber Haydn war da anderer Meinung:
 
-Karten bekommen Sie bei [München-Ticket](https://www.muenchenticket.de/event/schaeftlarner-konzerte-2025-31548/), [Abonnements](mailto:kontakt@schaeftlarner-konzerte.de?subject=Abonnementbestellung) haben wir für Sie jederzeit, auch während der laufenden Saison, vorrätig.
+„Halten zu Gnaden, aber nicht doch. Schaun S’, wenn ich an den lieben Herrgott denk’, werd’ ich gleich immer so heidenmäßig froh, dass ich mich gar nicht zu lassen weiß.“
+
+So gesehen ist es doch eigentlich völlig egal, welche Jahreszeit grad ist.
+
+Ich wünsche Ihnen einen herrlichen Herbst,
+Karten bekommen Sie bei [München-Ticket](https://www.muenchenticket.de/event/schaeftlarner-konzerte-2025-31548/428362/), [Abonnements](mailto:kontakt@schaeftlarner-konzerte.de?subject=Abonnementbestellung) haben wir für Sie jederzeit, auch während der laufenden Saison, vorrätig.
 
 <br><br>
 Herzlich  
