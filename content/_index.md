@@ -37,7 +37,7 @@ So festlich und in fast noch barocker Manier scheint es dem jungen Haydn von lei
 
 Vielleicht hat er das Konzert ja im Herbst geschrieben, man weiß es nicht und ich glaub, man könnte es dem Werk auch nicht anhören, denn selbst wenn es bei Haydn abgründig wird, bleibt er seiner gelassenen Freundlichkeit gegenüber der Welt treu.
 
-Für seinen Brotherren Fürst Ézterhazy waren ja selbst seine Messen zu fröhlich, aber Haydn war da anderer Meinung:
+Für seinen Brotherren Fürst Ezterházy waren ja selbst seine Messen zu fröhlich, aber Haydn war da anderer Meinung:
 
 „Halten zu Gnaden, aber nicht doch. Schaun S’, wenn ich an den lieben Herrgott denk’, werd’ ich gleich immer so heidenmäßig froh, dass ich mich gar nicht zu lassen weiß.“
 
