@@ -31,7 +31,7 @@ gastronomie: >
   (ca. 1 km vom Kloster entfernt). Oder Sie genießen Blumenpracht und Springbrunnen im Prälatengarten.
 ---
 
-Jetzt hab ich doch tatsächlich diesem letzten Konzert die Überschrift „Dreierlei vom Herbst“ gegeben, und nun fällt mir beim genaueren Studium des Haydnschen Cellokonzertes auf, dass dieses Konzert eher einem heiteren Sommertag gleicht, als einem ruhigen Herbstabend.
+Jetzt hab ich doch tatsächlich diesem letzten Konzert die Überschrift [„Dreierlei vom Herbst“](https://schaeftlarnerkonzerte.github.io/programm/2025/#collapse5) gegeben, und nun fällt mir beim genaueren Studium des Haydnschen Cellokonzertes auf, dass dieses Konzert eher einem heiteren Sommertag gleicht, als einem ruhigen Herbstabend.
 
 So festlich und in fast noch barocker Manier scheint es dem jungen Haydn von leichter Feder aufs Papier gepurzelt zu sein, dass ein Gedanke an Herbst sich gar nicht einstellen mag.
 
