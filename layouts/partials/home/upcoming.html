@@ -1,0 +1,44 @@
+<section class="section section--soft">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <h2 class="h3 mb-0">Nächste Konzerte</h2>
+      <a href="/programm/" class="link-secondary">Alle Termine</a>
+    </div>
+
+    {{ $now := now }}
+    {{ $events := where .Site.RegularPages "Section" "programm" }}
+    {{ $future := where $events ".Date" "ge" $now | sort "Date" }}
+    {{ $nextTwo := first 2 $future }}
+
+    {{ if gt (len $nextTwo) 0 }}
+      <div class="row g-4">
+        {{ range $nextTwo }}
+          <div class="col-12 col-md-6">
+            <div class="card-clean card-hz h-100">
+              {{ $img := .Params.hero_image | default "/img/placeholder.jpg" }}
+              <img src="{{ $img }}" alt="{{ .Title }}">
+              <div class="body">
+                <div>
+                  <div class="meta mb-1">📅 {{ .Date.Format "02. January 2006, 19:00" }}</div>
+                  <h3 class="h5 mb-2">{{ .Title }}</h3>
+                  {{ with .Params.pieces }}
+                    <ul class="clean">
+                      {{ range first 2 . }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+                {{ with .Params.ticket_url }}
+                  <div class="mt-3">
+                    <a class="btn btn-sm btn-clean btn-clean-primary" href="{{ . }}" target="_blank" rel="noopener">Tickets</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="text-muted">Aktuell sind keine zukünftigen Termine eingetragen.</p>
+    {{ end }}
+  </div>
+</section>
