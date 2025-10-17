@@ -1,0 +1,37 @@
+baseURL = "https://schaeftlarnerkonzerte.github.io/"
+languageCode = "de"
+title = "Schäftlarner Konzerte"
+defaultContentLanguage = "de"
+theme = "universal"
+
+[params]
+description = "Die Konzertreihe südlich von München. Seit 1968."
+author = "Schäftlarner Konzerte e.V."
+
+[markup]
+  [markup.goldmark.renderer]
+  unsafe = true
+  [markup.highlight]
+  style = "github"
+  lineNos = false
+
+[menu]
+  [[menu.main]]
+  name = "Programm"
+  url  = "/programm/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Tickets"
+  url  = "/tickets/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Förderkreis"
+  url  = "/foerderkreis/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Kontakt"
+  url  = "/contact/"
+  weight = 4
