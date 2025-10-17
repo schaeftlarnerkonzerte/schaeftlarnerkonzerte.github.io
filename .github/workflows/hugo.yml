@@ -36,7 +36,7 @@ jobs:
       # baseURL: "https://schaeftlarnerkonzerte.github.io/redesign-2025/"
 
       - name: Build
-        run: hugo --minify --config config.yaml
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
