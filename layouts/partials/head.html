@@ -1,26 +1,35 @@
-{{- /* Head partial for Schäftlarner Konzerte (custom override) */ -}}
+{{- /* Head partial for Schäftlarner Konzerte (robust template) */ -}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ if .Title }}{{ .Title }} | {{ end }}Schäftlarner Konzerte</title>
 
-  {{ with .Description }}
-  <meta name="description" content="{{ . }}">
-  {{ else if .Site.Params.description }}
-  <meta name="description" content="{{ .Site.Params.description }}">
+  {{/* Beschreibung: Seite > Site-Default */}}
+  {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+  {{ else }}
+    {{ with .Site.Params.description }}
+      <meta name="description" content="{{ . }}">
+    {{ end }}
   {{ end }}
 
   {{ with .Site.Params.keywords }}
-  <meta name="keywords" content="{{ . }}">
+    <meta name="keywords" content="{{ . }}">
   {{ end }}
 
   <meta name="author" content="{{ .Site.Params.author | default "Schäftlarner Konzerte e.V." }}">
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:site_name" content="Schäftlarner Konzerte">
-  <meta property="og:title" content="{{ .Title | default "Schäftlarner Konzerte" }}">
-  <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}Schäftlarner Konzerte">
+  {{ if .Description }}
+    <meta property="og:description" content="{{ .Description }}">
+  {{ else }}
+    {{ with .Site.Params.description }}
+      <meta property="og:description" content="{{ . }}">
+    {{ end }}
+  {{ end }}
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ .Site.BaseURL }}img/klosterkirche.jpg">
@@ -36,7 +45,4 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Hugo internal styles/scripts -->
-  {{ block "head" . }}{{ end }}
 </head>
