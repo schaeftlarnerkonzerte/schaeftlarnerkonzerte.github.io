@@ -1,4 +1,4 @@
-# Schäftlarner Konzerte Website
+# Schäftlarner Konzerte Website 
 
 Offizielle Website der Schäftlarner Konzerte - eine Hugo-basierte statische Website.
 
