@@ -1,7 +1,10 @@
+yaml
+
 baseURL: 'https://schaeftlarnerkonzerte.github.io'
 languageCode: 'de'
 title: 'Schäftlarner Konzerte'
 defaultContentLanguage: 'de'
+theme: universal
 
 params:
   description: 'Die Konzertreihe südlich von München. Seit 1968.'
