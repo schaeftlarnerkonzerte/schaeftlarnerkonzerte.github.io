@@ -1,15 +1,15 @@
 yaml
 
-baseURL: 'https://schaeftlarnerkonzerte.github.io'
-languageCode: 'de'
-title: 'Schäftlarner Konzerte'
-defaultContentLanguage: 'de'
+baseURL: "https://schaeftlarnerkonzerte.github.io"
+languageCode: "de"
+title: "Schäftlarner Konzerte"
+defaultContentLanguage: "de"
 theme: universal
 
 params:
-  description: 'Die Konzertreihe südlich von München. Seit 1968.'
-  keywords: 'Schäftlarner Konzerte, Mozart, Haydn, Bach, Schubert, klassische Musik, Benno Forster, Michael Forster, Kloster Schäftlarn, Kirchenmusik, Barockmusik'
-  author: 'Schäftlarner Konzerte e.V.'
+  description: "Die Konzertreihe südlich von München. Seit 1968."
+  keywords: "Schäftlarner Konzerte, Mozart, Haydn, Bach, Schubert, klassische Musik, Benno Forster, Michael Forster, Kloster Schäftlarn, Kirchenmusik, Barockmusik"
+  author: "Schäftlarner Konzerte e.V."
 
 markup:
   goldmark:
@@ -22,8 +22,8 @@ markup:
 security:
   funcs:
     getenv:
-      - '^HUGO_'
-      - '^WC_'
+      - "^HUGO_"
+      - "^WC_"
 
 menu:
   main:
