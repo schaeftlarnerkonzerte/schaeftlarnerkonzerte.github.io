@@ -1,0 +1,40 @@
+{{- /* Footer partial for Schäftlarner Konzerte (custom override) */ -}}
+<footer class="bg-light border-top mt-5">
+  <div class="container py-5">
+    <div class="row gy-4 align-items-center">
+      <!-- Text / Info -->
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <p class="mb-1 fw-semibold text-primary">Schäftlarner Konzerte e.V.</p>
+        <p class="mb-1">Kloster Schäftlarn, 82069 Schäftlarn</p>
+        <p class="mb-0">
+          <a href="mailto:kontakt@schaeftlarner-konzerte.de" class="text-decoration-none text-dark">
+            kontakt@schaeftlarner-konzerte.de
+          </a>
+        </p>
+      </div>
+
+      <!-- Footer-Navigation -->
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a href="/impressum/" class="text-decoration-none text-dark">Impressum</a>
+          </li>
+          <li class="list-inline-item mx-2">|</li>
+          <li class="list-inline-item">
+            <a href="/datenschutz/" class="text-decoration-none text-dark">Datenschutz</a>
+          </li>
+          <li class="list-inline-item mx-2">|</li>
+          <li class="list-inline-item">
+            <a href="/contact/" class="text-decoration-none text-dark">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-top py-3">
+    <div class="container text-center small text-muted">
+      © {{ now.Format "2006" }} Schäftlarner Konzerte e.V. · Alle Rechte vorbehalten
+    </div>
+  </div>
+</footer>
