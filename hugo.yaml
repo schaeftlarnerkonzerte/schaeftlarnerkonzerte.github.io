@@ -11,7 +11,6 @@ params:
   keywords: 'Schäftlarner Konzerte, Mozart, Haydn, Bach, Schubert, klassische Musik, Benno Forster, Michael Forster, Kloster Schäftlarn, Kirchenmusik, Barockmusik'
   author: 'Schäftlarner Konzerte e.V.'
 
-
 markup:
   goldmark:
     renderer:
@@ -19,6 +18,21 @@ markup:
   highlight:
     style: github
     lineNos: false
+
+menu:
+  main:
+    - name: "Programm"
+      url: "/programm/"
+      weight: 1
+    - name: "Tickets"
+      url: "/tickets/"
+      weight: 2
+    - name: "Förderkreis"
+      url: "/foerderkreis/"
+      weight: 3
+    - name: "Kontakt"
+      url: "/contact/"
+      weight: 4
 
 security:
   funcs:
