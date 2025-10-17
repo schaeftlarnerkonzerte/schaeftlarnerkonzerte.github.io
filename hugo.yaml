@@ -19,6 +19,12 @@ markup:
     style: github
     lineNos: false
 
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^WC_'
+
 menu:
   main:
     - name: "Programm"
@@ -33,9 +39,3 @@ menu:
     - name: "Kontakt"
       url: "/contact/"
       weight: 4
-
-security:
-  funcs:
-    getenv:
-      - '^HUGO_'
-      - '^WC_'
